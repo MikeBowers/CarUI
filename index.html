@@ -24,16 +24,28 @@
     		var h = today.getHours();
     		var m = today.getMinutes();
     		var s = today.getSeconds();
+		var ampm = "AM";
+			
     		m = checkTime(m);
     		s = checkTime(s);
-		
+		ampm = ampmCheck(ampm);
+			
+			
     		document.getElementById('time').innerHTML =
-    		h + ":" + m;
+    		h + ":" + m + ";" + ampm;
     		var t = setTimeout(startTime, 500);
 		}
 		function checkTime(i) {
     		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+		
     		return i;
+		}
+		function ampmCheck(i) {
+		if(h > 12)
+		{ h = h-12;
+		i = "PM";}
+		else(i = "AM";)
+		return i;
 		}
 		</script>
 		<title>QuickClaimz</title>
