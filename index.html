@@ -6,13 +6,19 @@
 	<head>
 		<title>QuickClaimz</title>
 		<script>
+		function accidentSimulator() {
+		var AccidentIndicator = confirm("Simulate Accident?");
+		}
+		
 		function startTime() {
     		var today = new Date();
+		
     		var h = today.getHours();
     		var m = today.getMinutes();
     		var s = today.getSeconds();
     		m = checkTime(m);
     		s = checkTime(s);
+		
     		document.getElementById('time').innerHTML =
     		h + ":" + m;
     		var t = setTimeout(startTime, 500);
@@ -31,7 +37,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body onload="startTime()">
+	<body onload="startTime()","accidentSimulator()" >
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -39,7 +45,7 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Home</a></li>
-							<li><a href="#one">Vehicle Status</a></li>
+							<!--<li><a href="#one">Vehicle Status</a></li>-->
 							<li><a href="#two">Diagnostics</a></li>
 							<li><a href="#three">Contact Shop</a></li>
 						</ul>
@@ -63,7 +69,7 @@
 					</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
+					<!--<section id="one" class="wrapper style2 spotlights">
 						<section>
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
@@ -100,7 +106,7 @@
 								</div>
 							</div>
 						</section>
-					</section>
+					</section>-->
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
@@ -223,8 +229,6 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="assets/data.json"></script>
-			<script>
-			alert(carData.cars[0].firstName +""+ carData.cars[0].lastName);
-			</script>
+
 	</body>
 </html>
