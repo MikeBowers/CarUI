@@ -9,9 +9,7 @@
 		
 		</script>
 		<script type="text/javascript">
-    window.onload = function () {
-        DisplayCurrentTime();
-    };
+
     function DisplayCurrentTime() {
         var date = new Date();
         var hours = date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
@@ -31,7 +29,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body onload="startTime(); accidentSimulator();" >
+	<body onload="DisplayCurrentTime();" >
 
 		<!-- Sidebar -->
 			<section id="sidebar">
