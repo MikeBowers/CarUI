@@ -3918,10 +3918,7 @@
 
 		}
 
-		#one, #two, #three{
-			
-		}
-
-		.freebirdFormviewerViewFooterImageContainer{
-			
+		#claimsInfo p{
+			font-size:14px;
+			color:#FFF;
 		}
