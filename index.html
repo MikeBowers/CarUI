@@ -6,6 +6,36 @@
 	<head>
 		<title>QuickClaimz</title>
 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
+		$(document).ready(function () {
+			$("#a").click(function(){
+			$("#intro").css("display","show");
+			$("#two").css("display","none");
+			$("#three").css("display","none");
+			$("#four").css("display","none");});
+
+			$("#b").click(function(){
+			$("#intro").css("display","none");
+			$("#two").css("display","show");
+			$("#three").css("display","none");
+			$("#four").css("display","none");});
+
+			$("#c").click(function(){
+			$("#intro").css("display","none");
+			$("#two").css("display","none");
+			$("#three").css("display","show");
+			$("#four").css("display","none");});
+
+			$("#d").click(function(){
+			$("#intro").css("display","none");
+			$("#two").css("display","none");
+			$("#three").css("display","none");
+			$("#four").css("display","show");});
+});
+
+		</script>
+
 <script type="text/javascript">
 	var SimulateAccident = confirm("Simulate Accident?");
 
@@ -21,10 +51,14 @@
         lblTime.innerHTML = time;
 	var timeout = setTimeout(DisplayCurrentTime, 100);
     };
-</script>
+
+
+
+		</script>
+
 
 <span id="lblTime"></span>
-			
+
 		</script>
 		<title>QuickClaimz</title>
 
@@ -42,11 +76,11 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Home</a></li>
+							<li><a id="a" href="#intro">Home</a></li>
 							<!--<li><a href="#one">Vehicle Status</a></li>-->
-							<li><a href="#two">Diagnostics</a></li>
-							<li><a href="#three">Contact Shop</a></li>
-							<li><a href="#four">Claims Information</a></li>
+							<li><a id="b" href="#two">Diagnostics</a></li>
+							<li><a id="c" href="#three">Contact Shop</a></li>
+							<li><a id="d" href="#four">Claims Information</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -56,7 +90,7 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<section id="intro" class="wrapper style1 fullscreen fade-up" style="display:none;">
 						<div class="inner">
 							<h1 id="time">time</h1>
 							<div>Everything in your car looks great.<br/>
@@ -109,7 +143,7 @@
 					</section>-->
 
 				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
+					<section id="two" class="wrapper style3 fade-up" style="display:none;">
 						<div class="inner">
 							<h2>What we do</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
@@ -152,7 +186,7 @@
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+					<section id="three" class="wrapper style1 fade-up" style="display:none;">
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
@@ -232,7 +266,9 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js">
+
+			</script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
@@ -245,10 +281,10 @@
 			<script>
 
 					(function(data, policyNum){
-									
+
 						var myArrayData = data;
 						var claimsInfo = $("#claimsInfo");
-						
+
 						var arrayData = myArrayData.find(x => x.policyNumber == policyNum);
 						var customerInfo = "<p id='policyNumber'>"+ "Policy Number: "+ arrayData.policyNumber +"</p>";
 						customerInfo += "<p id='firstName'>"+ "Name: "+ arrayData.firstName +" "+ arrayData.lastName+"</p>";
@@ -263,9 +299,9 @@
 						customerInfo += "<p id='warningLightsUsedProrToAccident'>"+ "Were warning lights used: "+ arrayData.warningLightsUsedProrToAccdent +"</p>";
 						customerInfo += "<p id='onPhoneDuringAccident'>"+ "On Phone during accident: "+ arrayData.onPhoneDuringAccident +"</p>";
 						claimsInfo.append(customerInfo);
-		
+
 					})(carData.cars,'000000001');
-					   
+
 				</script>
 	</body>
 </html>
