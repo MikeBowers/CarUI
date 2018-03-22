@@ -4,7 +4,28 @@
 -->
 <html>
 	<head>
+<<<<<<< HEAD
 		<title>QuickClaimz</title>
+=======
+		<script>
+		function startTime() {
+    		var today = new Date();
+    		var h = today.getHours();
+    		var m = today.getMinutes();
+    		var s = today.getSeconds();
+    		m = checkTime(m);
+    		s = checkTime(s);
+    		document.getElementById('time').innerHTML =
+    		h + ":" + m;
+    		var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+    		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    		return i;
+		}
+		</script>
+		<title>Hyperspace by HTML5 UP</title>
+>>>>>>> de2eb48c7371e489ad6fb2c6764f89c331df8857
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -12,17 +33,17 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body>
+	<body onload="startTime()">
 
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">Vehicle Status</a></li>
+							<li><a href="#two">Diagnostics</a></li>
+							<li><a href="#three">Contact Shop</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -34,7 +55,7 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1>Hyperspace Change</h1>
+							<h1 id="time">time</h1>
 							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
 							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
 							<ul class="actions">
