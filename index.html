@@ -6,40 +6,48 @@
 	<head>
 		<title>QuickClaimz</title>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+		.mikehide{
+			display: none;
+		}
+		.mikeshow{
+			display: show;
+		}
+		</style>
 
+  <!-- <script>
 		$(document).ready(function () {
+     //$("#intro").css("background-color", "yellow");
 			$("#a").click(function(){
 			$("#intro").css("display","show");
-			$("#two").css("display","none");
-			$("#three").css("display","none");
-			$("#four").css("display","none");});
+			$("#two").css("display","hide");
+			$("#three").css("display","hide");
+			$("#four").css("display","hide");});
 
-			$("#b").click(function(){
-			$("#intro").css("display","none");
+			$("#b").on('click', function(){
+			$("#intro").css("display","hide");
 			$("#two").css("display","show");
-			$("#three").css("display","none");
-			$("#four").css("display","none");});
+			$("#three").css("display","hide");
+			$("#four").css("display","hide");});
 
-			$("#c").click(function(){
-			$("#intro").css("display","none");
-			$("#two").css("display","none");
+			$("#c").on('click', function(){
+			$("#intro").css("display","hide");
+			$("#two").css("display","hide");
 			$("#three").css("display","show");
-			$("#four").css("display","none");});
+			$("#four").css("display","hide");});
 
-			$("#d").click(function(){
-			$("#intro").css("display","none");
-			$("#two").css("display","none");
-			$("#three").css("display","none");
+			$("#d").on('click', function(){
+			$("#intro").css("display","hide");
+			$("#two").css("display","hide");
+			$("#three").css("display","hide");
 			$("#four").css("display","show");});
 });
-
-		</script>
+		</script>-->
 
 <script type="text/javascript">
 	var SimulateAccident = confirm("Simulate Accident?");
-
-    function DisplayCurrentTime() {
+  function DisplayCurrentTime() {
         var date = new Date();
         var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
         var am_pm = date.getHours() >= 12 ? "PM" : "AM";
@@ -51,9 +59,6 @@
         lblTime.innerHTML = time;
 	var timeout = setTimeout(DisplayCurrentTime, 100);
     };
-
-
-
 		</script>
 
 
