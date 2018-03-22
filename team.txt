@@ -17,8 +17,5 @@
 
 1MHgOkIz5kYUchwfSIaR3e2kIcaABryZfb414Iv-DP7k
 
+https://docs.google.com/a/google.com/spreadsheets/d/1MHgOkIz5kYUchwfSIaR3e2kIcaABryZfb414Iv-DP7k/gviz/tq?range=A1:A5
 
-https://docs.google.com/a/google.com/spreadsheets/d/1MHgOkIz5kYUchwfSIaR3e2kIcaABryZfb414Iv-DP7k/gviz/tq?tq=select%20A
-
-
-https://sheets.googleapis.com/v4/spreadsheets/1MHgOkIz5kYUchwfSIaR3e2kIcaABryZfb414Iv-DP7k/values/RANGE?key=AKfycbxTJ4rpFX6BuTHHVlIfcw8eNEsthOIqoUDbdpiKiQA1XdO7DHUI
