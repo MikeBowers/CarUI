@@ -1,4 +1,4 @@
-carData = '[
+carData = { "cars": [
     {   
         "firstName":"Mike"
         ,"lastName":"Bowers"
@@ -14,10 +14,9 @@ carData = '[
     {   
         "firstName":"Josh"
         ,"lastName":"Bowers"
-        , "age":"20"
-        , "numberOfPassengers" : 0
-        ,"wearingSeatBelt":false
+        ,"age":"20"
         ,"numberOfPassengers" : 0
+        ,"wearingSeatBelt":false
         ,"dataAndTimeOfAccident":""
         ,"speedAtTimeOfAccidentMph": 0
         ,"pointOfImpact":""
@@ -27,10 +26,9 @@ carData = '[
     {   
         "firstName":"Rayshawn"
         ,"lastName":"Eatmon"
-        , "age":"20"
-        , "numberOfPassengers" : 0
-        ,"wearingSeatBelt":false
+        ,"age":"20"
         ,"numberOfPassengers" : 0
+        ,"wearingSeatBelt":false
         ,"dataAndTimeOfAccident":""
         ,"speedAtTimeOfAccidentMph": 0
         ,"pointOfImpact":""
@@ -40,10 +38,9 @@ carData = '[
     {   
         "firstName":"Juan"
         ,"lastName":"Granda"
-        , "age":"20"
-        , "numberOfPassengers" : 0
-        ,"wearingSeatBelt":false
+        ,"age":"20"
         ,"numberOfPassengers" : 0
+        ,"wearingSeatBelt":false
         ,"dataAndTimeOfAccident":""
         ,"speedAtTimeOfAccidentMph": 0
         ,"pointOfImpact":""
@@ -53,14 +50,13 @@ carData = '[
     {   
         "firstName":"Ryan"
         ,"lastName":"Brenner"
-        , "age":"20"
-        , "numberOfPassengers" : 0
-        ,"wearingSeatBelt":false
+        ,"age":"20"
         ,"numberOfPassengers" : 0
+        ,"wearingSeatBelt":false
         ,"dataAndTimeOfAccident":""
         ,"speedAtTimeOfAccidentMph": 0
         ,"pointOfImpact":""
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
     }
-    ]';
+    ]}
