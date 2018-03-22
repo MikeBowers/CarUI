@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE HTML>
 <!--
 	QuickClaimz
@@ -67,10 +67,9 @@
                 <h1 id="customer">Claims Information</h1>
           	<!--Data-->
 						<form id="test-form" action="">
-=======
 <script>
 var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbxTJ4rpFX6BuTHHVlIfcw8eNEsthOIqoUDbdpiKiQA1XdO7DHUI/exec/firstName=Joel'
+    url = 'https://script.google.com/macros/s/AKfycbxTJ4rpFX6BuTHHVlIfcw8eNEsthOIqoUDbdpiKiQA1XdO7DHUI/exec/'
 // submit below
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
@@ -81,6 +80,7 @@ $('#submit-form').on('click', function(e) {
     data: $form.serializeObject()
   }).success(
     // do something
+    alert("works")
   );
 })
 </script>
@@ -90,7 +90,6 @@ $('#submit-form').on('click', function(e) {
     <label>Field 1</label>
     <input type="text" name="firstName" placeholder="Field 1"/>
   </div>
->>>>>>> 1f316978149be07f3815940d116a1801149415dd
   
 								<div>
 								  <label>Field 1</label>
