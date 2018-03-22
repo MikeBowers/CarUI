@@ -6,16 +6,18 @@
 	<head>
 		<title>QuickClaimz</title>
 		<script>
+		function accidentSimulator() {
+		var AccidentIndicator = confirm("Simulate Accident?");
+		}
+		
 		function startTime() {
     		var today = new Date();
-		var AccidentIndicator = confirm("Simulate Crash?");
+		
     		var h = today.getHours();
     		var m = today.getMinutes();
     		var s = today.getSeconds();
     		m = checkTime(m);
     		s = checkTime(s);
-		
-		
 		
     		document.getElementById('time').innerHTML =
     		h + ":" + m;
@@ -35,7 +37,7 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body onload="startTime()">
+	<body onload="startTime()","accidentSimulator()" >
 
 		<!-- Sidebar -->
 			<section id="sidebar">
