@@ -1,5 +1,5 @@
-var $form = $('form#test-form'),
-    url = 'https://script.google.com/macros/s/AKfycbxTJ4rpFX6BuTHHVlIfcw8eNEsthOIqoUDbdpiKiQA1XdO7DHUI/exec'
+var $form = $('form#test-form');
+var url = 'https://script.google.com/macros/s/AKfycbxTJ4rpFX6BuTHHVlIfcw8eNEsthOIqoUDbdpiKiQA1XdO7DHUI/exec';
 // submit below
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
@@ -7,7 +7,7 @@ $('#submit-form').on('click', function(e) {
     url: url,
     method: "GET",
     dataType: "json",
-    data: $form.serializeObject()
+    data:  $form.serializeArray()
   }).success(
     alert("Successful")
   );
