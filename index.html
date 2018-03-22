@@ -6,8 +6,13 @@
 	<head>
 		<title>QuickClaimz</title>
 		<script>
+		var frontDamage = false;
+		var rearDamage = false;
+		var rightDamage = false;
+		var leftDamage = false;
 		function accidentSimulator() {
 		var AccidentIndicator = confirm("Simulate Accident?");
+		if(AccidentIndicator){frontDamage = true;}
 		}
 		
 		function startTime() {
@@ -28,7 +33,7 @@
     		return i;
 		}
 		</script>
-		<title>Hyperspace by HTML5 UP</title>
+		<title>QuickClaimz</title>
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
