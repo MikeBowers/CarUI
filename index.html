@@ -19,7 +19,7 @@
         time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
         var lblTime = document.getElementById("time");
         lblTime.innerHTML = time;
-	var timeout = setTimeout(DisplayCurrentTime(),100);
+	var timeout = setTimeout(DisplayCurrentTime, 100);
     };
 </script>
 
