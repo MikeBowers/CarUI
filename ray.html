@@ -54,8 +54,11 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1 id="time">time</h1>
-							<div>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+							<div id="customer">
+                                <form id="customerForm">
+
+                                </form>
+                            </div>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
 							</ul>
@@ -223,6 +226,13 @@
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="assets/data.json"></script>
 			<script>
+
+    var arrayLength = carData.cars.length;
+    for (var i = 0; i < arrayLength; i++) {
+        alert(myStringArray[i]);
+        //Do something
+    }
+
 			alert(carData.cars[0].firstName +" "+ carData.cars[0].lastName);
 			</script>
 	</body>

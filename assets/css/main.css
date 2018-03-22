@@ -3919,5 +3919,9 @@
 		}
 
 		#one, #two, #three{
-			display:none;/*works*/
+			
+		}
+
+		.freebirdFormviewerViewFooterImageContainer{
+			
 		}
