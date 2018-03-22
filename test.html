@@ -39,9 +39,9 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Home</a></li>
-							<!--<li><a href="#one">Vehicle Status</a></li>
+							<!--<li><a href="#one">Vehicle Status</a></li>-->
 							<li><a href="#two">Diagnostics</a></li>
-							<li><a href="#three">Contact Shop</a></li>-->
+							<!--<li><a href="#three">Contact Shop</a></li>-->
 						</ul>
 					</nav>
 				</div>
@@ -104,43 +104,52 @@
 
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
+							<style>
+									.damaged {background-color: #FF1310;}
+									.notdamaged {background-color:#44FF2D;}	    
+							</style>
+
 						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<h2>Diagnostics</h2>
+							<p>Vehcicle Diagnostics:</p>
+							<body>Tesla Model T</body>
 							<div class="features">
-								<section>
-									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								<section class="notdamaged">
+									<!--<span class=""></span>-->
+									<h3>Front</h3>
+									<p></p>
 								</section>
-								<section>
-									<span class="icon major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								<section class="notdamaged">
+									<!--<span class=""></span>-->
+									<h3>Back</h3>
+									<p></p>
 								</section>
-								<section>
-									<span class="icon major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								<section class="notdamaged">
+									<!--<span class=""></span>-->
+									<h3>Left</h3>
+									<p></p>
 								</section>
-								<section>
-									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								<section class="notdamaged">
+								<!--<span class=""></span>-->
+									<h3>Right</h3>
+									<p></p>
 								</section>
-								<section>
-									<span class="icon major fa-chain"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
+								<!--<section class="notdamaged">
+									<!--<span class=""></span>
+									<h3>Dash Light</h3>
+									<p></p>
 								</section>
-								<section>
-									<span class="icon major fa-diamond"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
+								
+								<section class="notdamaged">
+									<!--<span class=""></span>
+									<h3>Number PAssengers</h3>
+									<p></p>
+								</section>-->
+
+								
 							</div>
 							<ul class="actions">
-								<li><a href="#" class="button">Learn more</a></li>
+								<li><a href="#" class="button">Home</a></li>
 							</ul>
 						</div>
 					</section>
@@ -223,7 +232,7 @@
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="assets/data.json"></script>
 			<script>
-			alert(carData.cars[0].firstName +" "+ carData.cars[0].lastName);
+			alert(carData.cars[0].firstName +""+ carData.cars[0].lastName);
 			</script>
 	</body>
 </html>
