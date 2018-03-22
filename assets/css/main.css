@@ -3919,5 +3919,5 @@
 		}
 
 		#one, #two, #three{
-			display:none;
+			display:none;/*works*/
 		}

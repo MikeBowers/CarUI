@@ -15,7 +15,6 @@ carData = '[
         "firstName":"Josh"
         ,"lastName":"Bowers"
         , "age":"20"
-        , "":null
         , "numberOfPassengers" : 0
         ,"wearingSeatBelt":false
         ,"numberOfPassengers" : 0
@@ -24,13 +23,11 @@ carData = '[
         ,"pointOfImpact":""
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
-    
     },
     {   
         "firstName":"Rayshawn"
         ,"lastName":"Eatmon"
         , "age":"20"
-        , "":null
         , "numberOfPassengers" : 0
         ,"wearingSeatBelt":false
         ,"numberOfPassengers" : 0
@@ -44,7 +41,6 @@ carData = '[
         "firstName":"Juan"
         ,"lastName":"Granda"
         , "age":"20"
-        , "":null
         , "numberOfPassengers" : 0
         ,"wearingSeatBelt":false
         ,"numberOfPassengers" : 0
@@ -53,13 +49,11 @@ carData = '[
         ,"pointOfImpact":""
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
-    
     },
     {   
         "firstName":"Ryan"
         ,"lastName":"Brenner"
         , "age":"20"
-        , "":null
         , "numberOfPassengers" : 0
         ,"wearingSeatBelt":false
         ,"numberOfPassengers" : 0
@@ -69,5 +63,4 @@ carData = '[
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
     }
-    
     ]';
