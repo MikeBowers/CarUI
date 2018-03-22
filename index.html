@@ -24,15 +24,15 @@
     		var h = today.getHours();
     		var m = today.getMinutes();
     		var s = today.getSeconds();
-		var ampm = "AM";
+
 			
     		m = checkTime(m);
     		s = checkTime(s);
-		ampm = ampmCheck(ampm);
+
 			
 			
     		document.getElementById('time').innerHTML =
-    		h + ":" + m + ";" + ampm;
+    		h + ":" + m + ";";
     		var t = setTimeout(startTime, 500);
 		}
 		function checkTime(i) {
@@ -40,13 +40,7 @@
 		
     		return i;
 		}
-		function ampmCheck(i) {
-		if(h > 12)
-		{ h = h-12;
-		i = "PM";}
-		
-		return i;
-		}
+
 		
 			
 		</script>
@@ -86,6 +80,7 @@
 							<div>Everything in your car looks great.<br/>
 							<div>Diagnostics indicate good driving
 							<ul class="actions">
+							<br/>
 							<li><a href="#two" class="button scrolly">See more</a></li>
 							</ul>
 						</div>
