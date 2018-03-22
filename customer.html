@@ -67,25 +67,6 @@
                 <h1 id="customer">Claims Information</h1>
           	<!--Data-->
 						<form id="test-form" action="">
-<script>
-var $form = $('form#test-form'),
-
-// submit below
-$('#submit-form').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-    alert("works")
-  );
-})
-</script>
-<form id="test-form">
-  
   <div>
     <label>Field 1</label>
     <input type="text" name="firstName" placeholder="Field 1"/>
