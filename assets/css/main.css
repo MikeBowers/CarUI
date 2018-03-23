@@ -3963,5 +3963,20 @@
 		#claimsInfo{
 			padding:20px;
 			background:#FFF;
+			min-height:500px;
+		}
+
+		#claimsInfo p:nth-child(odd){
+			float:left;
+			clear:right;
+			width:300px;
+		}
+		#claimsInfo p:nth-child(even){
+			float:left;
+			width:300px;
+		}
+
+		#claimsInfo p{
+			font-size:16px;
 		}
 		

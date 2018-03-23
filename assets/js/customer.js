@@ -43,7 +43,7 @@ policyNumber = window.location.hash.substring(1); //Puts hash in variable, and r
             var customerInfo = "<p id='policyNumber'>"+ "Policy Number: "+ customer.policyNumber +"</p>";
             customerInfo += "<p id='firstName'>"+ "Name: "+ customer.firstName +" "+ customer.lastName+"</p>";
             customerInfo += "<p id='age'>"+ "Age: "+ customer.age +"</p>";
-            customerInfo += "<p id='phoneNumber'>"+ "phoneNumber: "+ customer.phoneNumber +"</p>";
+            customerInfo += "<p id='phoneNumber'>"+ "Phone Number: "+ customer.phoneNumber +"</p>";
             customerInfo += "<p id='email'>"+ "Email: "+ customer.email +"</p>";
             customerInfo += "<p id='wearingSeatBelt'>"+ "Seat Belt: "+ customer.wearingSeatBelt +"</p>";
             customerInfo += "<p id='numberOfPassengers'>"+ "Passengers #: "+ customer.numberOfPassengers +"</p>";
@@ -56,7 +56,7 @@ policyNumber = window.location.hash.substring(1); //Puts hash in variable, and r
             claimsInfo.append(customerInfo);
         },
         error:function(res){
-            alert("Bad thing happend! " + res.statusText);
+            console.log("Bad thing happenned! " + res.statusText);
         }
       });
 
