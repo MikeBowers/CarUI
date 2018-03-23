@@ -6,23 +6,7 @@
 <html>
 	<head>
 		<title>QuickClaimz</title>
-		<script>
-		function startTime() {
-    		var today = new Date();
-    		var h = today.getHours();
-    		var m = today.getMinutes();
-    		var s = today.getSeconds();
-    		m = checkTime(m);
-    		s = checkTime(s);
-    		document.getElementById('time').innerHTML =
-    		h + ":" + m;
-    		var t = setTimeout(startTime, 500);
-		}
-		function checkTime(i) {
-    		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    		return i;
-		}
-		</script>
+		
 		<title>Hyperspace by HTML5 UP</title>
 
 		<meta charset="utf-8" />
@@ -39,61 +23,24 @@
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Home</a></li>
-							<!--<li><a href="#one">Vehicle Status</a></li>
-							<li><a href="#two">Diagnostics</a></li>
-							<li><a href="#three">Contact Shop</a></li>-->
+							<li><a href="index.html">Home</a></li>
+							<li><a href="#two">Customer Information</a></li>
 						</ul>
 					</nav>
 				</div>
 			</section>
 
 		<!-- Wrapper -->
-			<div id="wrapper">
+			<div id="wrapper" class="customer">
 				<!-- Intro -->
-					<section id="four" class="wrapper style1 fullscreen fade-up">
+					<section id="two" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 							<h1 id="customer">Customer Information</h1>
-							<div id="claimsInfo">
-                            </div>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
+							<div id="claimsInfo"></div>
 						</div>
           </section>
           
-          <section id="five" class="wrapper style1 fullscreen fade-up">
-              <div class="inner">
-                <h1 id="customer">Claims Information</h1>
-          	<!--Data-->
-						<form id="test-form" action="">
-								<div>
-								  <label>Policy Number</label>
-								  <input type="text" name="policyNumber" placeholder="Policy Number"/>
-								</div>
-							  
-								<div>
-								  <label>First Name</label>
-								  <input type="text" name="firstName" placeholder="First Name"/>
-								</div>
-								
-								<div>
-								  <label>Last Name</label>
-								  <input type="text" name="lastName" placeholder="Last Name"/>
-								</div>
-								
-								<div>
-								  <label>Age</label>
-								  <input type="text" name="age" placeholder="Age"/>
-								</div>
-							  
-								<div>
-								  <button type="submit"id="submit-form">Submit</button>
-								</div>
-							  
-                </form>
-		         </div>
-            </section>
+         
 			</div>
 		
 		<!-- Footer -->
@@ -113,7 +60,7 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
       <script src="assets/js/main.js"></script>
-       <script src="assets/js/customer.js"></script>
+      <script src="assets/js/customer.js"></script>
 	</body>
 </html>
 

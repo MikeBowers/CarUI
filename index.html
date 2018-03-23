@@ -7,81 +7,6 @@
 		<title>QuickClaimz</title>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<style>
-		.mikehide{
-			display: none;
-		}
-		.mikeshow{
-			display: show;
-		}
-		</style>
-  <!-- <script>
-		$(document).ready(function () {
-     //$("#intro").css("background-color", "yellow");
-			$("#a").click(function(){
-			$("#intro").css("display","show");
-			$("#two").css("display","hide");
-			$("#three").css("display","hide");
-			$("#four").css("display","hide");});
-
-			$("#b").on('click', function(){
-			$("#intro").css("display","hide");
-			$("#two").css("display","show");
-			$("#three").css("display","hide");
-			$("#four").css("display","hide");});
-
-			$("#c").on('click', function(){
-			$("#intro").css("display","hide");
-			$("#two").css("display","hide");
-			$("#three").css("display","show");
-			$("#four").css("display","hide");});
-
-			$("#d").on('click', function(){
-			$("#intro").css("display","hide");
-			$("#two").css("display","hide");
-			$("#three").css("display","hide");
-			$("#four").css("display","show");});
-});
-		</script>-->
-<script type="text/javascript">
-
-
-	 //$("#intro").css("background-color", "yellow");
-	 // if(SimulateAccident == true){
-		//  	$(document).ready(function () {
-		//  	alert("hi");
-		//  	$("#status1").text('Accident Detected!');
-		//  	$("#status2").text('Accident Detected!');
-		//  });
-	 // };
-
-
-if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
-		  	$(document).ready(function () {
-		  	$("#status1").text('Accident Detected!');
-				$("#status2").text('Please See Diagnostics Panel and submit claim.');
-		  });
-}else{
-	 //alert("NO Accident!!!");
-}
-
-
-
-  function DisplayCurrentTime() {
-
-        var date = new Date();
-        var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
-        var am_pm = date.getHours() >= 12 ? "PM" : "AM";
-        hours = hours < 10 ? "0" + hours : hours;
-        var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-        var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
-        time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
-        var lblTime = document.getElementById("time");
-        lblTime.innerHTML = time;
-	var timeout = setTimeout(DisplayCurrentTime, 1000);
-    };
-		</script>
-
 
 <span id="lblTime"></span>
 
@@ -96,6 +21,7 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body onload="DisplayCurrentTime()" >
+		<!--<a href="#two" class="button scrolly" style="float: right;">Simulate Accident</a>-->
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -103,10 +29,8 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 					<nav>
 						<ul>
 							<li><a id="a" href="#intro">Home</a></li>
-							<!--<li><a href="#one">Vehicle Status</a></li>-->
 							<li><a id="b" href="#two">Diagnostics</a></li>
-							<li><a id="c" href="#three">Contact Shop</a></li>
-							<li><a id="d" href="#four">Claims Information</a></li>
+							<li><a id="d" href="#four">Claims Information - Contact Shop</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -124,106 +48,79 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 							<div>
 							<ul class="actions">
 							<br/>
-							<li><a href="#two" class="button scrolly">See more</a></li>
+							<li><a href="#two" class="button special scrolly">See more</a></li>
 							</ul>
 						</div>
 					</section>
 
-				<!-- One -->
-					<!--<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>-->
+				
+				<!-- Diagnostics #Two -->
+				<section  id="two" class="wrapper style1 fullscreen fade-up"  >
+				<div class="inner">
+					<h2 style="color:rgb(198, 147, 240);">Vehicle Diagnostics:</h2>
+					<p><img src="images/ryan/car.png" width="26%" height="relative"/></p>
+					<!--<p>Vehcicle Diagnostics:</p>-->
+					<!--<ps  style="color:rgb(208, 131, 231); font-size:20px">Tesla Model T </p>-->
+						
+						
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up" style="display:show;">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-chain"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-diamond"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+					<div class="features">
+						<section id="frontOfCar" class="" style="">
+							<span><h3 style="color:rgb(198, 147, 240); font-size:30px;">Front</h3></span>
+							<p><img id="frontIcon" src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+							<ul id ="damageListFront"></ul>
+						</section>
+						<section class="" style="">
+							<!--<span class=""></span>-->
+							<h3 style="color:rgb(198, 147, 240); font-size:30px;">Back</h3>
+							<p><img src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+						</section>
+						<section class="" style="">
+							<!--<span class=""></span>-->
+							<h3 style="color:rgb(198, 147, 240); font-size:30px;">Left</h3>
+							<p><img src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+						</section>
+						<section id ="rightSide" class="" style="">
+						<!--<span class=""></span>-->
+							<h3 style="color:rgb(198, 147, 240); font-size:30px;">Right</h3>
+							<p><img id="rightIcon" src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+							<ul id ="damageListRight"></ul>
+						</section>
+						<section class="">
+							<span class=""></span>
+							<h3 style="width 25px;color:rgb(198, 147, 240); font-size:30px;">Dash Light</h3>
+							<p><img src="images/ryan/dashsig.png" width="66%" height="relative"/></p>
+							<body style="font-size:18px;"> <a id="engineLightIndicator">YES</a><a>/NO</a></body>
+						</section>
+						<section class="">
+							<span class=""></span>
+							<h3 style="width 25px;color:rgb(198, 147, 240); font-size:30px;">Air Bag</h3>
+							<p><img src="images/ryan/air_bag.jpg" width="62%" height="relative"/></p>
+							<body style="font-size:18px;"> <a id="airbagIndicator">YES</a><a>/NO</a></body>
+						</section>
+						
+						
+
+						
+					</div>
+					<ul class="actions">
+						<li><a href="#" class="button">Home</a></li>
+					</ul>
+				</div>
+			</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+					<!-- <section id="three" class="wrapper style1 fade-up">
 						<div class="inner">
 							<h2>Claim & Repair Form</h2>
 							<p>Tell us a few more details and choose a repair shop</p>
 							<form method="post" action="#">
-								<div class="row uniform">
-									<div class="6u$ 12u$(xsmall)">
+								<div class="row uniform"> -->
+									<!-- <div class="6u$ 12u$(xsmall)">
 										<label for="jg-id-datetime">Date and time of the accident:</label>
 										<input type="datetime-local" id="jg-id-datetime" class="jg-date-picker"/>
-									</div>
-									<div class="9u$ 12u$(xsmall)">
+									</div> -->
+									<!-- <div class="9u$ 12u$(xsmall)">
 											<label for="demo-category10">Number of passengers</label>
 										<div class="select-wrapper">
 											<select name="demo-category" id="demo-category10">
@@ -235,8 +132,8 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 												<option value="5">5</option>
 											</select>
 										</div>
-									</div>	
-									<h3 class="12u$">Were all passengers wearing a seatbelt?</h3>
+									</div>	 -->
+									<!-- <h3 class="12u$">Were all passengers wearing a seatbelt?</h3>
 									<div class="4u 12u$(small)">
 										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
 										<label for="demo-priority-low">Yes</label>
@@ -244,26 +141,26 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 									<div class="4u$ 12u$(small)">
 										<input type="radio" id="demo-priority-normal" name="demo-priority">
 										<label for="demo-priority-normal">No</label>
-									</div>
-									<div class="9u$ 12u$(xsmall)">
+									</div> -->
+									<!-- <div class="9u$ 12u$(xsmall)">
 										<label>Speed at time of accident</label>
 										<input type="number" name="demo-name" id="demo-name" value="" placeholder="m/h" />
-									</div>
-									<div class="9u$ 12u$(xsmall)">
+									</div> -->
+									<!-- <div class="9u$ 12u$(xsmall)">
 										<label>Main point of impact</label>
 										<input type="text" name="demo-name" id="demo-name" value="" placeholder="" />
-									</div>
-									<div class="9u$ 12u$(xsmall)">
+									</div> -->
+									<!-- <div class="9u$ 12u$(xsmall)">
 										<label>Were any of the warning lights on prior to the accident?</label>
 										<input type="text" name="demo-name" id="demo-name" value="" placeholder="" />
-									</div>
-									<div class="9u$ 12u$(xsmall)">
+									</div> -->
+									<!-- <div class="9u$ 12u$(xsmall)">
 										<label>Was the driver using their phone?</label>
 										<input type="text" name="demo-name" id="demo-name" value="" placeholder="" />
-									</div>
-								</div>
+									</div> -->
+								<!-- </div> -->
 
-									<section>
+									<!-- <section>
 										<h2 class="major">Repair Shops</h2>
 										<div class="table-wrapper">
 											<table>
@@ -317,20 +214,189 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 									</div>
 							</form>
 						</div>
-					</section>
+					</section> -->
 		
-
-					<!--Claims Information for now.-->
+		
 					<section id="four" class="wrapper style1 fullscreen fade-up">
-							<div class="inner">
-								<h1 id="customer">Customer Information</h1>
-								<div id="claimsInfo">
-								</div>
-								<ul class="actions">
-									<li><a href="#one" class="button scrolly">Learn more</a></li>
-								</ul>
-							</div>
-						</section>
+						<div class="inner">
+							<h2>Claim & Repair Form</h2>
+							<p>Tell us a few more details and choose a repair shop</p>	
+						<!--Data-->
+								  <form id="test-form" action="">
+										<div class="row uniform">		
+										  <div class="9u$ 12u$(xsmall)">
+											<label>Policy Number</label>
+											<input type="text" name="policyNumber" id="policyNumber" placeholder="Policy Number"/>
+										  </div>
+										
+										  <div class="4u 12u$(xsmall)">
+											<label>First Name</label>
+											<input type="text" name="firstName" placeholder="First Name"/>
+										  </div>
+										  
+										  <div class="5u$ 12u$(xsmall)">
+											<label>Last Name</label>
+											<input type="text" name="lastName" placeholder="Last Name"/>
+										  </div>
+										  
+										  <div class="2u 12u$(xsmall)"> 
+											<label>Age</label>
+											<input type="text" name="age" placeholder="Age"/>
+										  </div>
+										  
+										  <div class="7u$ 12u$(xsmall)">
+											  <label>Phone Number</label>
+											  <input type="text" name="phoneNumber" placeholder="PhoneNumber"/>
+										  </div>
+										  
+										  <div class="9u$ 12u$(xsmall)">
+											  <label>Email</label>
+											  <input type="text" name="email" placeholder="Email"/>
+										  </div>
+										  <div class="9u$ 12u$(xsmall)">
+												<label for="demo-category10">Number of passengers</label>
+											<div class="select-wrapper">
+												<select name="numberOfPassengers" id="demo-category10">
+													<option value="">- Passengers -</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+													<option value="5">5</option>
+												</select>
+											</div>
+										</div>		
+										  <!-- <div>
+											  <label>Wearing Seat Belt</label>
+											  <input type="text" name="wearingSeatBelt" placeholder="WearingSeatBelt"/>
+										  </div> -->
+										  <h3 class="12u$">Were all passengers wearing a seatbelt?</h3>
+										  <div class="4u 12u$(small)">
+											  <input type="radio" id="demo-priority-low" value="Yes" name="wearingSeatBelt">
+											  <label for="demo-priority-low">Yes</label>
+										  </div>
+										<div class="4u$ 12u$(small)">
+											<input type="radio" id="demo-priority-normal" value="No" name="wearingSeatBelt">
+											<label for="demo-priority-normal">No</label>
+										</div>
+										  <!-- <div>
+											  <label>Number Of Passengers</label>
+											  <input type="text" name="numberOfPassengers" placeholder="NumberOfPassengers"/>
+										  </div> -->
+										  
+										  <!-- <div>
+											  <label>Date and Time Of Accident</label>
+											  <input type="text" name="dateAndTimeOfAccident" placeholder="YYYY-MM-DD HH:mm"/>
+										  </div> -->
+										  <div class="6u$ 12u$(xsmall)">
+												<label for="jg-id-datetime">Date and time of the accident:</label>
+												<input type="datetime-local" id="jg-id-datetime" name="dateAndTimeOfAccident" class="jg-date-picker"/>
+											</div>
+
+										  <!-- <div>
+											  <label>Speed At Time Of Accident in Mph</label>
+											  <input type="text" name="speedAtTimeOfAccidentMph" placeholder="speedAtTimeOfAccidentMph"/>
+										  </div> -->
+										  <div class="9u$ 12u$(xsmall)">
+												<label>Speed at time of accident</label>
+												<input type="number" name="speedAtTimeOfAccidentMph" id="demo-name" value="" placeholder="Mph" />
+											</div>		
+										  
+										  <!-- <div>
+											  <label>Point Of Impact</label>
+											  <input type="text" name="pointOfImpact" placeholder="pointOfImpact"/>
+										  </div> -->
+										  <div class="9u$ 12u$(xsmall)">
+												<label>Main point of impact</label>
+												<input type="text" name="pointOfImpact" id="demo-name" value="" placeholder="" />
+											</div>		
+										  
+										  <!-- <div>
+											  <label>WarningLightsUsedProrToAccident</label>
+											  <input type="text" name="warningLightsUsedProrToAccident" placeholder="warningLightsUsedProrToAccident"/>
+										  </div> -->
+										  <div class="9u$ 12u$(xsmall)">
+												<label>Were any of the warning lights on prior to the accident?</label>
+												<input type="text" name="warningLightsUsedPriorToAccident" id="demo-name" value="" placeholder="" />
+											</div>		
+										  
+										  <!-- <div>
+											  <label>onPhoneDuringAccident</label>
+											  <input type="text" name="onPhoneDuringAccident" placeholder="onPhoneDuringAccident"/>
+										  </div> -->
+										  <div class="9u$ 12u$(xsmall)">
+												<label>Was the driver using their phone?</label>
+												<input type="text" name="onPhoneDuringAccident" id="demo-name" value="" placeholder="" />
+											</div>
+		
+										  <!-- <div>
+											<label>Repair Shop</label>
+											<input type="text" name="repairShop" placeholder="repairShop"/>
+										</div> -->
+									</div>
+
+									<section>
+											<h2 class="major">Repair Shops</h2>
+											<div class="table-wrapper">
+												<table>
+													<thead>
+														<tr>
+															<th>Shop</th>
+															<th>Distance</th>
+															<th></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>The first shop</td>
+															<td>0.2 miles</td>
+															<td>
+																<div class="1u 12u$(small)">
+																	<input type="radio" id="repair-shop-one" value="repair-shop-one" name="repairShop" checked>
+																	<label for="repair-shop-one"></label>
+																</div>								
+															</td>
+														</tr>
+														<tr>
+															<td>The better shop</td>
+															<td>5 miles</td>
+															<td>
+																<div class="1u$ 12u$(small)">
+																	<input type="radio" id="repair-shop-two" value="repair-shop-two" name="repairShop">
+																	<label for="repair-shop-two"></label>
+																</div>								
+															</td>
+														</tr>
+														<tr>
+															<td>The best shop</td>
+															<td> 7 miles</td>
+															<td>
+																<div class="1u$ 12u$(small)">
+																	<input type="radio" id="repair-shop-three" value="repair-shop-three" name="repairShop">
+																	<label for="repair-shop-three"></label>
+																</div>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</section>
+										<div class="12u$">
+											<ul class="actions">
+												<li><input type="submit" value="Send Message" class="special" id="submit-form"/></li>
+												<li><input type="reset" value="Reset" /></li>
+											</ul>
+										</div>
+	
+
+										  <!-- <div>
+											<button type="submit"id="submit-form">Submit</button>
+										  </div> -->
+										
+						  </form>
+						   </div>
+					  </section>
+
 
 			</div>
 
@@ -350,36 +416,9 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/customer.js"></script>
+			<script src="assets/js/index.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script type="text/javascript" src="assets/data.json"></script>
 			
-
-			<script>
-
-					(function(data, policyNum){
-
-						var myArrayData = data;
-						var claimsInfo = $("#claimsInfo");
-
-						var arrayData = myArrayData.find(x => x.policyNumber == policyNum);
-						var customerInfo = "<p id='policyNumber'>"+ "Policy Number: "+ arrayData.policyNumber +"</p>";
-						customerInfo += "<p id='firstName'>"+ "Name: "+ arrayData.firstName +" "+ arrayData.lastName+"</p>";
-						customerInfo += "<p id='age'>"+ "Age: "+ arrayData.age +"</p>";
-						customerInfo += "<p id='phoneNumber'>"+ "phoneNumber: "+ arrayData.phoneNumber +"</p>";
-						customerInfo += "<p id='email'>"+ "Email: "+ arrayData.email +"</p>";
-						customerInfo += "<p id='wearingSeatBelt'>"+ "Seat Belt: "+ arrayData.wearingSeatBelt +"</p>";
-						customerInfo += "<p id='numberOfPassengers'>"+ "Passengers #: "+ arrayData.numberOfPassengers +"</p>";
-						customerInfo += "<p id='dataAndTimeOfAccident'>"+ "Date and Time: "+ arrayData.dataAndTimeOfAccdent +"</p>";
-						customerInfo += "<p id='speedAtTimeOfAccidentMph'>"+ "Speed(MPH): "+ arrayData.speedAtTimeOfAccdentMph +"</p>";
-						customerInfo += "<p id='pointOfImpact'>"+ "Pont of Impact: "+ arrayData.pontOfmpact +"</p>";
-						customerInfo += "<p id='warningLightsUsedProrToAccident'>"+ "Were warning lights used: "+ arrayData.warningLightsUsedProrToAccdent +"</p>";
-						customerInfo += "<p id='onPhoneDuringAccident'>"+ "On Phone during accident: "+ arrayData.onPhoneDuringAccident +"</p>";
-						claimsInfo.append(customerInfo);
-
-					})(carData.cars,'000000001');
-
-				</script>
 	</body>
 </html>
