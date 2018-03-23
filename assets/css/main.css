@@ -3955,4 +3955,13 @@
 		.mikeshow{
 			display: show;
 		}
+
+		#claimsInfo, #claimsInfo p{
+			color:#312450 !important;
+		}
+
+		#claimsInfo{
+			padding:20px;
+			background:#FFF;
+		}
 		

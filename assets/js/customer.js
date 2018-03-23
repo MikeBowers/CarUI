@@ -52,6 +52,7 @@ policyNumber = window.location.hash.substring(1); //Puts hash in variable, and r
             customerInfo += "<p id='pointOfImpact'>"+ "Point of Impact: "+ customer.pointOfImpact +"</p>";
             customerInfo += "<p id='warningLightsUsedPriorToAccident'>"+ "Were warning lights used: "+ customer.warningLightsUsedPriorToAccident +"</p>";
             customerInfo += "<p id='onPhoneDuringAccident'>"+ "On Phone during accident: "+ customer.onPhoneDuringAccident +"</p>";
+            customerInfo += "<p id='repairShop'>"+ "Repair Shop: "+ customer.repairShop +"</p>";
             claimsInfo.append(customerInfo);
         },
         error:function(res){
@@ -87,6 +88,8 @@ policyNumber = window.location.hash.substring(1); //Puts hash in variable, and r
             case 11: objectInfo.phoneNumber = value;
                     break;
             case 12: objectInfo.email = value;
+                    break;
+            case 13: objectInfo.repairShop = value;
                     break;
             default:
                     break;
