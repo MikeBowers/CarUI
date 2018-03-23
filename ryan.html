@@ -1,29 +1,12 @@
 <!DOCTYPE HTML>
 <!--
-	QuickClaimz
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>QuickClaimz</title>
-		<script>
-		function startTime() {
-    		var today = new Date();
-    		var h = today.getHours();
-    		var m = today.getMinutes();
-    		var s = today.getSeconds();
-    		m = checkTime(m);
-    		s = checkTime(s);
-    		document.getElementById('time').innerHTML =
-    		h + ":" + m;
-    		var t = setTimeout(startTime, 500);
-		}
-		function checkTime(i) {
-    		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    		return i;
-		}
-		</script>
 		<title>Hyperspace by HTML5 UP</title>
-
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -31,14 +14,14 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body onload="startTime()">
+	<body>
 
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Home</a></li>
+							<!--<li><a href="#intro">Home</a></li>-->
 							<!--<li><a href="#one">Vehicle Status</a></li>-->
 							<li><a href="#two">Diagnostics</a></li>
 							<!--<li><a href="#three">Contact Shop</a></li>-->
@@ -53,8 +36,8 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<h1 id="time">time</h1>
-							<div>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
+							<h1>QuickClaimz</h1>
+							<p>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
 							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly">Learn more</a></li>
@@ -103,71 +86,44 @@
 					</section>
 
 				<!-- Two -->
-					<section  id="intro" id="two" class="wrapper style1 fullscreen fade-up"  >
-							<style>
-									.damaged {background-color: #FF1A09; border-style:solid; 
-										border-width: 8px;
-										border-color: #7F0D05;
-										margin: 5px, 5px, 5px, 5px;
-										color:#7F0D05;
-									}
-									.notdamaged {background-color:rgb(17, 88, 7); border-style:solid; 
-										border-width: 3px; 
-										border-color: rgb(255, 255, 255);
-										margin: 5px, 5px, 5px, 5px;
-										
-									}
-									
-									
-
-							</style>
-
-
-
+					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2 style="color:rgb(198, 147, 240);">Vehicle Diagnostics:</h2>
-							<!--<p>Vehcicle Diagnostics:</p>-->
-							<!--<ps  style="color:rgb(208, 131, 231); font-size:20px">Tesla Model T </p>-->
-								<p><img src="images/ryan/car.png" width="26%" height="relative"/></p>
+							<h2>What we do</h2>
+							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
 							<div class="features">
-								<section class="" style="">
-									<span><h3 style="color:rgb(198, 147, 240); font-size:30px;">Front</h3></span>
-									<p><img src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+								<section>
+									<span class="icon major fa-code"></span>
+									<h3>Lorem ipsum amet</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
-								<section class="" style="">
-									<!--<span class=""></span>-->
-									<h3 style="color:rgb(198, 147, 240); font-size:30px;">Back</h3>
-									<p><img src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+								<section>
+									<span class="icon major fa-lock"></span>
+									<h3>Aliquam sed nullam</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
-								<section class="" style="">
-									<!--<span class=""></span>-->
-									<h3 style="color:rgb(198, 147, 240); font-size:30px;">Left</h3>
-									<p><img src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+								<section>
+									<span class="icon major fa-cog"></span>
+									<h3>Sed erat ullam corper</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
-								<section class="" style="">
-								<!--<span class=""></span>-->
-									<h3 style="color:rgb(198, 147, 240); font-size:30px;">Right</h3>
-									<p><img src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+								<section>
+									<span class="icon major fa-desktop"></span>
+									<h3>Veroeros quis lorem</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
-								<section class="">
-									<span class=""></span>
-									<h3 style="width 25px;color:rgb(198, 147, 240); font-size:30px;">Dash Light</h3>
-									<p><img src="images/ryan/dashsig.png" width="66%" height="relative"/></p>
-									<body style="font-size:18px;"> YES/NO</body>
+								<section>
+									<span class="icon major fa-chain"></span>
+									<h3>Urna quis bibendum</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
-								<section class="">
-									<span class=""></span>
-									<h3 style="width 25px;color:rgb(198, 147, 240); font-size:30px;">Air Bag</h3>
-									<p><img src="images/ryan/air_bag.jpg" width="62%" height="relative"/></p>
-									<body style="font-size:18px;"> YES/NO</body>
+								<section>
+									<span class="icon major fa-diamond"></span>
+									<h3>Aliquam urna dapibus</h3>
+									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
 								</section>
-								
-								
-
-								
 							</div>
 							<ul class="actions">
-								<li><a href="#" class="button">Home</a></li>
+								<li><a href="#" class="button">Learn more</a></li>
 							</ul>
 						</div>
 					</section>
@@ -193,7 +149,7 @@
 											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Vehicle Data</a></li>
+											<li><a href="" class="button submit">Send Message</a></li>
 										</ul>
 									</form>
 								</section>
@@ -235,12 +191,13 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; QuickClaimz. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
 
 		<!-- Scripts -->
+			<script src="assets/js/random.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
@@ -248,9 +205,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script type="text/javascript" src="assets/data.json"></script>
-			<script>
-			alert(carData.cars[0].firstName +""+ carData.cars[0].lastName);
-			</script>
+
 	</body>
 </html>
