@@ -3934,3 +3934,25 @@
 			font-size:14px;
 			color:#FFF;
 		}
+
+		.damaged {
+			background-color: rgba(255, 52, 38, 0.589); 
+
+		}
+		.damagedLight {
+			color: rgb(255, 115, 0);
+		}
+		.notdamaged {background-color:rgb(17, 88, 7); border-style:solid; 
+			border-width: 3px; 
+			border-color: rgb(255, 255, 255);
+			margin: 5px, 5px, 5px, 5px;
+			
+		}
+
+		.mikehide{
+			display: none;
+		}
+		.mikeshow{
+			display: show;
+		}
+		

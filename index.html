@@ -7,91 +7,6 @@
 		<title>QuickClaimz</title>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<style>
-		.mikehide{
-			display: none;
-		}
-		.mikeshow{
-			display: show;
-		}
-		</style>
-
-  <!-- <script>
-		$(document).ready(function () {
-     //$("#intro").css("background-color", "yellow");
-			$("#a").click(function(){
-			$("#intro").css("display","show");
-			$("#two").css("display","hide");
-			$("#three").css("display","hide");
-			$("#four").css("display","hide");});
-
-			$("#b").on('click', function(){
-			$("#intro").css("display","hide");
-			$("#two").css("display","show");
-			$("#three").css("display","hide");
-			$("#four").css("display","hide");});
-
-			$("#c").on('click', function(){
-			$("#intro").css("display","hide");
-			$("#two").css("display","hide");
-			$("#three").css("display","show");
-			$("#four").css("display","hide");});
-
-			$("#d").on('click', function(){
-			$("#intro").css("display","hide");
-			$("#two").css("display","hide");
-			$("#three").css("display","hide");
-			$("#four").css("display","show");});
-});
-		</script>-->
-
-<script type="text/javascript">
-
-
-	 //$("#intro").css("background-color", "yellow");
-	 // if(SimulateAccident == true){
-		//  	$(document).ready(function () {
-		//  	alert("hi");
-		//  	$("#status1").text('Accident Detected!');
-		//  	$("#status2").text('Accident Detected!');
-		//  });
-	 // };
-
-
-if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
-		  	$(document).ready(function () {
-		  	$("#status1").text('Accident Detected!');
-				$("#status2").text('Please See Diagnostics Panel and submit claim.');
-				$("#frontOfCar").addClass("damaged");
-				$("#rightSide").addClass("damaged");
-				$("#damageListFront").append('<li>Front Panel</li><br/><li>Headlights</li><br/>');
-				$("#damageListRight").append('<li>Side Mirror</li><br/><li>Window Panel</li><br/>');
-				$("#frontIcon").remove();
-				$("#rightIcon").remove();
-				$("#engineLightIndicator").addClass("damagedLight");
-				$("#airbagIndicator").addClass("damagedLight");
-		  });
-}else{
-	 //alert("NO Accident!!!");
-}
-
-
-
-  function DisplayCurrentTime() {
-
-        var date = new Date();
-        var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
-        var am_pm = date.getHours() >= 12 ? "PM" : "AM";
-        hours = hours < 10 ? "0" + hours : hours;
-        var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-        var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
-        time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
-        var lblTime = document.getElementById("time");
-        lblTime.innerHTML = time;
-	var timeout = setTimeout(DisplayCurrentTime, 1000);
-    };
-		</script>
-
 
 <span id="lblTime"></span>
 
@@ -114,7 +29,6 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 					<nav>
 						<ul>
 							<li><a id="a" href="#intro">Home</a></li>
-							<!--<li><a href="#one">Vehicle Status</a></li>-->
 							<li><a id="b" href="#two">Diagnostics</a></li>
 							<li><a id="c" href="#three">Contact Shop</a></li>
 							<li><a id="d" href="#four">Claims Information</a></li>
@@ -140,69 +54,9 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 						</div>
 					</section>
 
-				<!-- One -->
-					<!--<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>-->
-
+				
 				<!-- Diagnostics #Two -->
 				<section  id="two" class="wrapper style1 fullscreen fade-up"  >
-					<style>
-							.damaged {
-								background-color: rgba(255, 52, 38, 0.589); 
-
-							}
-							.damagedLight {
-								color: rgb(255, 115, 0);
-							}
-							.notdamaged {background-color:rgb(17, 88, 7); border-style:solid; 
-								border-width: 3px; 
-								border-color: rgb(255, 255, 255);
-								margin: 5px, 5px, 5px, 5px;
-								
-							}
-							
-							
-
-					</style>
-
-
-
 				<div class="inner">
 					<span><h2 style="color:rgb(198, 147, 240);">Vehicle Diagnostics:</h2><img src="images/ryan/car.png" width="26%" height="relative" style="float:right;"/></span>
 					<!--<p>Vehcicle Diagnostics:</p>-->
@@ -255,63 +109,7 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 				</div>
 			</section>
 
-				<!-- Three -->
-					<!--<section id="three" class="wrapper style1 fade-up" style="display:show;">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
-										</div>
-										<ul class="actions">
-											<li><a href="" id="customerData" class="button submit">Send Vehicle Data</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>-->
-
+		
 					<section id="four" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 						  <h1 id="customer">Claims Information</h1>
