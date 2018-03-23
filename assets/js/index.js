@@ -1,20 +1,20 @@
 
-if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
-    $(document).ready(function () {
-    $("#status1").text('Accident Detected!');
-      $("#status2").text('Please See Diagnostics Panel and submit claim.');
-      $("#frontOfCar").addClass("damaged");
-      $("#rightSide").addClass("damaged");
-      $("#damageListFront").append('<li>Front Panel</li><br/><li>Headlights</li><br/>');
-      $("#damageListRight").append('<li>Side Mirror</li><br/><li>Window Panel</li><br/>');
-      $("#frontIcon").remove();
-      $("#rightIcon").remove();
-      $("#engineLightIndicator").addClass("damagedLight");
-      $("#airbagIndicator").addClass("damagedLight");
-});
-}else{
-//alert("NO Accident!!!");
-}
+// if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
+//     $(document).ready(function () {
+//     $("#status1").text('Accident Detected!');
+//       $("#status2").text('Please See Diagnostics Panel and submit claim.');
+//       $("#frontOfCar").addClass("damaged");
+//       $("#rightSide").addClass("damaged");
+//       $("#damageListFront").append('<li>Front Panel</li><br/><li>Headlights</li><br/>');
+//       $("#damageListRight").append('<li>Side Mirror</li><br/><li>Window Panel</li><br/>');
+//       $("#frontIcon").remove();
+//       $("#rightIcon").remove();
+//       $("#engineLightIndicator").addClass("damagedLight");
+//       $("#airbagIndicator").addClass("damagedLight");
+// });
+// }else{
+// //alert("NO Accident!!!");
+// }
 
 
 
