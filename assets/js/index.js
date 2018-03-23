@@ -18,7 +18,7 @@
   $('input[name=wearingSeatBelt][value=No]').attr('checked','checked');
   $('input[name=wearingSeatBelt]').attr('readonly','readonly');
 
-  $('input[name=pointOfImpact]').val('rear bumper');
+  $('input[name=pointOfImpact]').val('front panel and right side mirro');
   $('input[name=pointOfImpact]').attr('readonly','readonly');
 
   $('input[name=speedAtTimeOfAccidentMph]').val('50');
