@@ -5,24 +5,67 @@
 <html>
 	<head>
 		<title>QuickClaimz</title>
-		<script>
-		function startTime() {
-    		var today = new Date();
-    		var h = today.getHours();
-    		var m = today.getMinutes();
-    		var s = today.getSeconds();
-    		m = checkTime(m);
-    		s = checkTime(s);
-    		document.getElementById('time').innerHTML =
-    		h + ":" + m;
-    		var t = setTimeout(startTime, 500);
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+		.mikehide{
+			display: none;
 		}
-		function checkTime(i) {
-    		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-    		return i;
+		.mikeshow{
+			display: show;
 		}
+		</style>
+
+  <!-- <script>
+		$(document).ready(function () {
+     //$("#intro").css("background-color", "yellow");
+			$("#a").click(function(){
+			$("#intro").css("display","show");
+			$("#two").css("display","hide");
+			$("#three").css("display","hide");
+			$("#four").css("display","hide");});
+
+			$("#b").on('click', function(){
+			$("#intro").css("display","hide");
+			$("#two").css("display","show");
+			$("#three").css("display","hide");
+			$("#four").css("display","hide");});
+
+			$("#c").on('click', function(){
+			$("#intro").css("display","hide");
+			$("#two").css("display","hide");
+			$("#three").css("display","show");
+			$("#four").css("display","hide");});
+
+			$("#d").on('click', function(){
+			$("#intro").css("display","hide");
+			$("#two").css("display","hide");
+			$("#three").css("display","hide");
+			$("#four").css("display","show");});
+});
+		</script>-->
+
+<script type="text/javascript">
+	var SimulateAccident = confirm("Simulate Accident?");
+  function DisplayCurrentTime() {
+        var date = new Date();
+        var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+        var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+        hours = hours < 10 ? "0" + hours : hours;
+        var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+        var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+        time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
+        var lblTime = document.getElementById("time");
+        lblTime.innerHTML = time;
+	var timeout = setTimeout(DisplayCurrentTime, 100);
+    };
 		</script>
-		<title>Hyperspace by HTML5 UP</title>
+
+
+<span id="lblTime"></span>
+
+		</script>
+		<title>QuickClaimz</title>
 
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -31,17 +74,18 @@
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
-	<body onload="startTime()">
+	<body onload="DisplayCurrentTime()" >
 
 		<!-- Sidebar -->
 			<section id="sidebar">
 				<div class="inner">
 					<nav>
 						<ul>
-							<li><a href="#intro">Home</a></li>
-							<!--<li><a href="#one">Vehicle Status</a></li>
-							<li><a href="#two">Diagnostics</a></li>
-							<li><a href="#three">Contact Shop</a></li>-->
+							<li><a id="a" href="#intro">Home</a></li>
+							<!--<li><a href="#one">Vehicle Status</a></li>-->
+							<li><a id="b" href="#two">Diagnostics</a></li>
+							<li><a id="c" href="#three">Contact Shop</a></li>
+							<li><a id="d" href="#four">Claims Information</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -51,23 +95,20 @@
 			<div id="wrapper">
 
 				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
+					<section id="intro" class="wrapper style1 fullscreen fade-up" style="display:show;">
 						<div class="inner">
 							<h1 id="time">time</h1>
-<!--
-	embedded form
--->
-
-							<div>Just another fine responsive site template designed by <a href="http://html5up.net">HTML5 UP</a><br />
-							and released for free under the <a href="http://html5up.net/license">Creative Commons</a>.</p>
+							<div>Everything in your car looks great.<br/>
+							<div>Diagnostics indicate good driving
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							<br/>
+							<li><a href="#two" class="button scrolly">See more</a></li>
 							</ul>
 						</div>
 					</section>
 
 				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
+					<!--<section id="one" class="wrapper style2 spotlights">
 						<section>
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
@@ -104,10 +145,10 @@
 								</div>
 							</div>
 						</section>
-					</section>
+					</section>-->
 
 				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
+					<section id="two" class="wrapper style3 fade-up" style="display:show;">
 						<div class="inner">
 							<h2>What we do</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
@@ -150,7 +191,7 @@
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
+					<section id="three" class="wrapper style1 fade-up" style="display:show;">
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
@@ -170,7 +211,7 @@
 											<textarea name="message" id="message" rows="5"></textarea>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Send Vehicle Data</a></li>
+											<li><a href="" id="customerData" class="button submit">Send Vehicle Data</a></li>
 										</ul>
 									</form>
 								</section>
@@ -206,6 +247,18 @@
 						</div>
 					</section>
 
+					<!--Claims Information for now.-->
+					<section id="four" class="wrapper style1 fullscreen fade-up">
+							<div class="inner">
+								<h1 id="customer">Customer Information</h1>
+								<div id="claimsInfo">
+								</div>
+								<ul class="actions">
+									<li><a href="#one" class="button scrolly">Learn more</a></li>
+								</ul>
+							</div>
+						</section>
+
 			</div>
 
 		<!-- Footer -->
@@ -218,16 +271,42 @@
 			</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.min.js">
+
+			</script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/customer.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script type="text/javascript" src="assets/data.json"></script>
+
 			<script>
-			alert(carData.cars[0].firstName +""+ carData.cars[0].lastName);
-			</script>
+
+					(function(data, policyNum){
+
+						var myArrayData = data;
+						var claimsInfo = $("#claimsInfo");
+
+						var arrayData = myArrayData.find(x => x.policyNumber == policyNum);
+						var customerInfo = "<p id='policyNumber'>"+ "Policy Number: "+ arrayData.policyNumber +"</p>";
+						customerInfo += "<p id='firstName'>"+ "Name: "+ arrayData.firstName +" "+ arrayData.lastName+"</p>";
+						customerInfo += "<p id='age'>"+ "Age: "+ arrayData.age +"</p>";
+						customerInfo += "<p id='phoneNumber'>"+ "phoneNumber: "+ arrayData.phoneNumber +"</p>";
+						customerInfo += "<p id='email'>"+ "Email: "+ arrayData.email +"</p>";
+						customerInfo += "<p id='wearingSeatBelt'>"+ "Seat Belt: "+ arrayData.wearingSeatBelt +"</p>";
+						customerInfo += "<p id='numberOfPassengers'>"+ "Passengers #: "+ arrayData.numberOfPassengers +"</p>";
+						customerInfo += "<p id='dataAndTimeOfAccident'>"+ "Date and Time: "+ arrayData.dataAndTimeOfAccdent +"</p>";
+						customerInfo += "<p id='speedAtTimeOfAccidentMph'>"+ "Speed(MPH): "+ arrayData.speedAtTimeOfAccdentMph +"</p>";
+						customerInfo += "<p id='pointOfImpact'>"+ "Pont of Impact: "+ arrayData.pontOfmpact +"</p>";
+						customerInfo += "<p id='warningLightsUsedProrToAccident'>"+ "Were warning lights used: "+ arrayData.warningLightsUsedProrToAccdent +"</p>";
+						customerInfo += "<p id='onPhoneDuringAccident'>"+ "On Phone during accident: "+ arrayData.onPhoneDuringAccident +"</p>";
+						claimsInfo.append(customerInfo);
+
+					})(carData.cars,'000000001');
+
+				</script>
 	</body>
 </html>

@@ -1,6 +1,7 @@
 carData = { "cars": [
     {   
-        "firstName":"Mike"
+        "policyNumber":"000000001"
+        ,"firstName":"Mike"
         ,"lastName":"Bowers"
         ,"age":"20"
         ,"wearingSeatBelt":false
@@ -10,9 +11,12 @@ carData = { "cars": [
         ,"pointOfImpact":""
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
+        ,"phoneNumber":"XXX-XXX-XXXX"
+        ,"email":"default@gmail.com"
     },
     {   
-        "firstName":"Josh"
+        "policyNumber":"000000002"
+        ,"firstName":"Josh"
         ,"lastName":"Bowers"
         ,"age":"20"
         ,"numberOfPassengers" : 0
@@ -22,9 +26,12 @@ carData = { "cars": [
         ,"pointOfImpact":""
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
+        ,"phoneNumber":"XXX-XXX-XXXX"
+        ,"email":"default@gmail.com"
     },
     {   
-        "firstName":"Rayshawn"
+        "policyNumber":"000000003"
+        ,"firstName":"Rayshawn"
         ,"lastName":"Eatmon"
         ,"age":"20"
         ,"numberOfPassengers" : 0
@@ -34,9 +41,12 @@ carData = { "cars": [
         ,"pointOfImpact":""
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
+        ,"phoneNumber":"XXX-XXX-XXXX"
+        ,"email":"default@gmail.com"
     },
     {   
-        "firstName":"Juan"
+        "policyNumber":"000000004"
+        ,"firstName":"Juan"
         ,"lastName":"Granda"
         ,"age":"20"
         ,"numberOfPassengers" : 0
@@ -46,9 +56,12 @@ carData = { "cars": [
         ,"pointOfImpact":""
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
+        ,"phoneNumber":"XXX-XXX-XXXX"
+        ,"email":"default@gmail.com"
     },
     {   
-        "firstName":"Ryan"
+        "policyNumber":"000000005"
+        ,"firstName":"Ryan"
         ,"lastName":"Brenner"
         ,"age":"20"
         ,"numberOfPassengers" : 0
@@ -58,5 +71,7 @@ carData = { "cars": [
         ,"pointOfImpact":""
         ,"warningLightsUsedPriorToAccident":false
         ,"onPhoneDuringAccident":false
+        ,"phoneNumber":"XXX-XXX-XXXX"
+        ,"email":"default@gmail.com"
     }
     ]}

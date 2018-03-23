@@ -3918,6 +3918,7 @@
 
 		}
 
-		#one, #two, #three{
-			display:none;/*works*/
+		#claimsInfo p{
+			font-size:14px;
+			color:#FFF;
 		}

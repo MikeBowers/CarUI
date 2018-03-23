@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<!--
+	QuickClaimz
+-->
+<html>
+	<head>
+		<title>QuickClaimz</title>
+		<script>
+		function startTime() {
+    		var today = new Date();
+    		var h = today.getHours();
+    		var m = today.getMinutes();
+    		var s = today.getSeconds();
+    		m = checkTime(m);
+    		s = checkTime(s);
+    		document.getElementById('time').innerHTML =
+    		h + ":" + m;
+    		var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+    		if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    		return i;
+		}
+		</script>
+		<title>Hyperspace by HTML5 UP</title>
+
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body onload="startTime()">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<!--<li><a href="#one">Vehicle Status</a></li>
+							<li><a href="#two">Diagnostics</a></li>
+							<li><a href="#three">Contact Shop</a></li>-->
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Intro -->
+					<section id="four" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1 id="customer">Customer Information</h1>
+							<div id="claimsInfo">
+                            </div>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+			</div>
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; QuickClaimz. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script type="text/javascript" src="assets/data.json"></script>
+            
+            <script>
+
+            (function(data, policyNum){
+                            
+                var myArrayData = data;
+                var claimsInfo = $("#claimsInfo");
+                
+                var arrayData = myArrayData.find(x => x.policyNumber == policyNum);
+                var customerInfo = "<p id='policyNumber'>"+ "Policy Number: "+ arrayData.policyNumber +"</p>";
+                customerInfo += "<p id='firstName'>"+ "Name: "+ arrayData.firstName +" "+ arrayData.lastName+"</p>";
+                customerInfo += "<p id='age'>"+ "Age: "+ arrayData.age +"</p>";
+                customerInfo += "<p id='phoneNumber'>"+ "phoneNumber: "+ arrayData.phoneNumber +"</p>";
+                customerInfo += "<p id='email'>"+ "Email: "+ arrayData.email +"</p>";
+                customerInfo += "<p id='wearingSeatBelt'>"+ "Seat Belt: "+ arrayData.wearingSeatBelt +"</p>";
+                customerInfo += "<p id='numberOfPassengers'>"+ "Passengers #: "+ arrayData.numberOfPassengers +"</p>";
+                customerInfo += "<p id='dataAndTimeOfAccident'>"+ "Date and Time: "+ arrayData.dataAndTimeOfAccdent +"</p>";
+                customerInfo += "<p id='speedAtTimeOfAccidentMph'>"+ "Speed(MPH): "+ arrayData.speedAtTimeOfAccdentMph +"</p>";
+                customerInfo += "<p id='pointOfImpact'>"+ "Pont of Impact: "+ arrayData.pontOfmpact +"</p>";
+                customerInfo += "<p id='warningLightsUsedProrToAccident'>"+ "Were warning lights used: "+ arrayData.warningLightsUsedProrToAccdent +"</p>";
+                customerInfo += "<p id='onPhoneDuringAccident'>"+ "On Phone during accident: "+ arrayData.onPhoneDuringAccident +"</p>";
+                claimsInfo.append(customerInfo);
+
+            })(carData.cars,'000000001');
+               
+	    </script>
+	</body>
+</html>
