@@ -3995,4 +3995,6 @@
 		#claimsInfo p{
 			font-size:16px;
 		}
-		
+		#claimsInfo .bold{
+			font-weight:bold;
+		}

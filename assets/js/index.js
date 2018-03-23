@@ -11,6 +11,25 @@
   $("#engineLightIndicator").addClass("damagedLight");
   $("#airbagIndicator").addClass("damagedLight");
 
+  var polNbr = Math.floor(Math.random() * 1000000000);
+  $('input#policyNumber').val(polNbr);
+  $('input#policyNumber').attr('readonly','readonly');
+
+  $('input[name=wearingSeatBelt][value=No]').attr('checked','checked');
+  $('input[name=wearingSeatBelt]').attr('readonly','readonly');
+
+  $('input[name=pointOfImpact]').val('rear bumper');
+  $('input[name=pointOfImpact]').attr('readonly','readonly');
+
+  $('input[name=speedAtTimeOfAccidentMph]').val('50');
+  $('input[name=speedAtTimeOfAccidentMph]').attr('readonly','readonly');
+
+  $('input[name=dateAndTimeOfAccident]').val('2018-03-23T12:01');
+  $('input[name=dateAndTimeOfAccident]').attr('readonly','readonly');
+
+  $('input[name=warningLightsUsedPriorToAccident][value=Yes]').attr('checked','checked');
+  $('input[name=warningLightsUsedPriorToAccident]').attr('readonly','readonly');
+
 })();
 
 

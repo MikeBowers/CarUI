@@ -40,19 +40,19 @@ policyNumber = window.location.hash.substring(1); //Puts hash in variable, and r
                 }
                 
             }
-            var customerInfo = "<p id='policyNumber'>"+ "Policy Number: "+ customer.policyNumber +"</p>";
-            customerInfo += "<p id='firstName'>"+ "Name: "+ customer.firstName +" "+ customer.lastName+"</p>";
-            customerInfo += "<p id='age'>"+ "Age: "+ customer.age +"</p>";
-            customerInfo += "<p id='phoneNumber'>"+ "Phone Number: "+ customer.phoneNumber +"</p>";
-            customerInfo += "<p id='email'>"+ "Email: "+ customer.email +"</p>";
-            customerInfo += "<p id='wearingSeatBelt'>"+ "Seat Belt: "+ customer.wearingSeatBelt +"</p>";
-            customerInfo += "<p id='numberOfPassengers'>"+ "Passengers #: "+ customer.numberOfPassengers +"</p>";
-            customerInfo += "<p id='dateAndTimeOfAccident'>"+ "Date and Time: "+ customer.dateAndTimeOfAccident +"</p>";
-            customerInfo += "<p id='speedAtTimeOfAccidentMph'>"+ "Speed(MPH): "+ customer.speedAtTimeOfAccidentMph +"</p>";
-            customerInfo += "<p id='pointOfImpact'>"+ "Point of Impact: "+ customer.pointOfImpact +"</p>";
-            customerInfo += "<p id='warningLightsUsedPriorToAccident'>"+ "Were warning lights used: "+ customer.warningLightsUsedPriorToAccident +"</p>";
-            customerInfo += "<p id='onPhoneDuringAccident'>"+ "On Phone during accident: "+ customer.onPhoneDuringAccident +"</p>";
-            customerInfo += "<p id='repairShop'>"+ "Repair Shop: "+ customer.repairShop +"</p>";
+            var customerInfo = "<p id='policyNumber'>"+ "<span class='bold'>Policy Number:</span> "+ customer.policyNumber +"</p>";
+            customerInfo += "<p id='firstName'>"+ "<span class='bold'>Name:</span> "+ customer.firstName +" "+ customer.lastName+"</p>";
+            customerInfo += "<p id='age'>"+ "<span class='bold'>Age:</span> "+ customer.age +"</p>";
+            customerInfo += "<p id='phoneNumber'>"+ "<span class='bold'>Phone Number:</span> "+ customer.phoneNumber +"</p>";
+            customerInfo += "<p id='email'>"+ "<span class='bold'>Email:</span> "+ customer.email +"</p>";
+            customerInfo += "<p id='wearingSeatBelt'>"+ "<span class='bold'>Seat Belt:</span> "+ customer.wearingSeatBelt +"</p>";
+            customerInfo += "<p id='numberOfPassengers'>"+ "<span class='bold'>Passengers #:</span> "+ customer.numberOfPassengers +"</p>";
+            customerInfo += "<p id='dateAndTimeOfAccident'>"+ "<span class='bold'>Date and Time:</span> "+ customer.dateAndTimeOfAccident +"</p>";
+            customerInfo += "<p id='speedAtTimeOfAccidentMph'>"+ "<span class='bold'>Speed(MPH):</span> "+ customer.speedAtTimeOfAccidentMph +"</p>";
+            customerInfo += "<p id='pointOfImpact'>"+ "<span class='bold'>Point of Impact:</span> "+ customer.pointOfImpact +"</p>";
+            customerInfo += "<p id='warningLightsUsedPriorToAccident'>"+ "<span class='bold'>Were warning lights used:</span> "+ customer.warningLightsUsedPriorToAccident +"</p>";
+            customerInfo += "<p id='onPhoneDuringAccident'>"+ "<span class='bold'>On Phone during accident:</span> "+ customer.onPhoneDuringAccident +"</p>";
+            customerInfo += "<p id='repairShop'>"+ "<span class='bold'>Repair Shop:</span> "+ customer.repairShop +"</p>";
             claimsInfo.append(customerInfo);
         },
         error:function(res){
