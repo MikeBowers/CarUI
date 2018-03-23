@@ -1,6 +1,7 @@
 var $form = $('form#test-form');
-//var url = 'https://script.google.com/macros/s/AKfycbxTJ4rpFX6BuTHHVlIfcw8eNEsthOIqoUDbdpiKiQA1XdO7DHUI/exec';
-var url ='https://script.google.com/macros/s/AKfycbzFmJqg8OvbstzIroc5PVAnSn6k4pNJzDqTR2Qn8wwRe8a_lbQ/exec';
+var url = 'https://script.google.com/macros/s/AKfycbxTJ4rpFX6BuTHHVlIfcw8eNEsthOIqoUDbdpiKiQA1XdO7DHUI/exec';
+//var url ='https://script.google.com/macros/s/AKfycbzFmJqg8OvbstzIroc5PVAnSn6k4pNJzDqTR2Qn8wwRe8a_lbQ/exec';
+//https://script.google.com/macros/s/AKfycbzFmJqg8OvbstzIroc5PVAnSn6k4pNJzDqTR2Qn8wwRe8a_lbQ/exec//
 $('#submit-form').on('click', function(e) {
   e.preventDefault();
   var jqxhr = $.ajax({
@@ -20,7 +21,7 @@ $('#submit-form').on('click', function(e) {
     //1MuyZ8kxM0NTH70n86UEqYf3bp5Y3taRCMUSzZNVpshI
     //1MHgOkIz5kYUchwfSIaR3e2kIcaABryZfb414Iv-DP7k
     //https://script.google.com/macros/s/AKfycbzFmJqg8OvbstzIroc5PVAnSn6k4pNJzDqTR2Qn8wwRe8a_lbQ/exec
-    var url = 'https://sheets.googleapis.com/v4/spreadsheets/1MuyZ8kxM0NTH70n86UEqYf3bp5Y3taRCMUSzZNVpshI/values/Sheet1?key=AIzaSyAccjOIRBqXHMf5YW_0HMwFBCk-z8f-gv8';
+    var url = 'https://sheets.googleapis.com/v4/spreadsheets/1MHgOkIz5kYUchwfSIaR3e2kIcaABryZfb414Iv-DP7k/values/Sheet1?key=AIzaSyAccjOIRBqXHMf5YW_0HMwFBCk-z8f-gv8';
 
     $.ajax({
         url: url,
