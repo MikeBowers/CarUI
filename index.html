@@ -216,7 +216,7 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 					</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up" style="display:show;">
+					<!--<section id="three" class="wrapper style1 fade-up" style="display:show;">
 						<div class="inner">
 							<h2>Get in touch</h2>
 							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
@@ -270,19 +270,85 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 								</section>
 							</div>
 						</div>
-					</section>
+					</section>-->
 
-					<!--Claims Information for now.-->
 					<section id="four" class="wrapper style1 fullscreen fade-up">
-							<div class="inner">
-								<h1 id="customer">Customer Information</h1>
-								<div id="claimsInfo">
-								</div>
-								<ul class="actions">
-									<li><a href="#one" class="button scrolly">Learn more</a></li>
-								</ul>
-							</div>
-						</section>
+						<div class="inner">
+						  <h1 id="customer">Claims Information</h1>
+						<!--Data-->
+								  <form id="test-form" action="">
+										  <div>
+											<label>Policy Number</label>
+											<input type="text" name="policyNumber" id="policyNumber" placeholder="Policy Number"/>
+										  </div>
+										
+										  <div>
+											<label>First Name</label>
+											<input type="text" name="firstName" placeholder="First Name"/>
+										  </div>
+										  
+										  <div>
+											<label>Last Name</label>
+											<input type="text" name="lastName" placeholder="Last Name"/>
+										  </div>
+										  
+										  <div>
+											<label>Age</label>
+											<input type="text" name="age" placeholder="Age"/>
+										  </div>
+										  
+										  <div>
+											  <label>Phone Number</label>
+											  <input type="text" name="phoneNumber" placeholder="PhoneNumber"/>
+										  </div>
+										  
+										  <div>
+											  <label>Email</label>
+											  <input type="text" name="email" placeholder="Email"/>
+										  </div>
+										  
+										  <div>
+											  <label>Wearing Seat Belt</label>
+											  <input type="text" name="wearingSeatBelt" placeholder="WearingSeatBelt"/>
+										  </div>
+										  
+										  <div>
+											  <label>Number Of Passengers</label>
+											  <input type="text" name="numberOfPassengers" placeholder="NumberOfPassengers"/>
+										  </div>
+										  
+										  <div>
+											  <label>Date and Time Of Accident</label>
+											  <input type="text" name="dateAndTimeOfAccident" placeholder="YYYY-MM-DD HH:mm"/>
+										  </div>
+										  
+										  <div>
+											  <label>Speed At Time Of Accident in Mph</label>
+											  <input type="text" name="speedAtTimeOfAccidentMph" placeholder="speedAtTimeOfAccidentMph"/>
+										  </div>
+										  
+										  <div>
+											  <label>Point Of Impact</label>
+											  <input type="text" name="pointOfImpact" placeholder="pointOfImpact"/>
+										  </div>
+										  
+										  <div>
+											  <label>warningLightsUsedProrToAccident</label>
+											  <input type="text" name="warningLightsUsedProrToAccident" placeholder="warningLightsUsedProrToAccident"/>
+										  </div>
+										  
+										  <div>
+											  <label>onPhoneDuringAccident</label>
+											  <input type="text" name="onPhoneDuringAccident" placeholder="onPhoneDuringAccident"/>
+										  </div>
+										  <div>
+											<button type="submit"id="submit-form">Submit</button>
+										  </div>
+										
+						  </form>
+						   </div>
+					  </section>
+
 
 			</div>
 
@@ -303,35 +369,9 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<script src="assets/js/customer.js"></script>
+			<script src="assets/js/index.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script type="text/javascript" src="assets/data.json"></script>
-
-			<script>
-
-					(function(data, policyNum){
-
-						var myArrayData = data;
-						var claimsInfo = $("#claimsInfo");
-
-						var arrayData = myArrayData.find(x => x.policyNumber == policyNum);
-						var customerInfo = "<p id='policyNumber'>"+ "Policy Number: "+ arrayData.policyNumber +"</p>";
-						customerInfo += "<p id='firstName'>"+ "Name: "+ arrayData.firstName +" "+ arrayData.lastName+"</p>";
-						customerInfo += "<p id='age'>"+ "Age: "+ arrayData.age +"</p>";
-						customerInfo += "<p id='phoneNumber'>"+ "phoneNumber: "+ arrayData.phoneNumber +"</p>";
-						customerInfo += "<p id='email'>"+ "Email: "+ arrayData.email +"</p>";
-						customerInfo += "<p id='wearingSeatBelt'>"+ "Seat Belt: "+ arrayData.wearingSeatBelt +"</p>";
-						customerInfo += "<p id='numberOfPassengers'>"+ "Passengers #: "+ arrayData.numberOfPassengers +"</p>";
-						customerInfo += "<p id='dataAndTimeOfAccident'>"+ "Date and Time: "+ arrayData.dataAndTimeOfAccdent +"</p>";
-						customerInfo += "<p id='speedAtTimeOfAccidentMph'>"+ "Speed(MPH): "+ arrayData.speedAtTimeOfAccdentMph +"</p>";
-						customerInfo += "<p id='pointOfImpact'>"+ "Pont of Impact: "+ arrayData.pontOfmpact +"</p>";
-						customerInfo += "<p id='warningLightsUsedProrToAccident'>"+ "Were warning lights used: "+ arrayData.warningLightsUsedProrToAccdent +"</p>";
-						customerInfo += "<p id='onPhoneDuringAccident'>"+ "On Phone during accident: "+ arrayData.onPhoneDuringAccident +"</p>";
-						claimsInfo.append(customerInfo);
-
-					})(carData.cars,'000000001');
-
-				</script>
+			
 	</body>
 </html>
