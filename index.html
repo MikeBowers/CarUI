@@ -62,6 +62,14 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 		  	$(document).ready(function () {
 		  	$("#status1").text('Accident Detected!');
 				$("#status2").text('Please See Diagnostics Panel and submit claim.');
+				$("#frontOfCar").addClass("damaged");
+				$("#rightSide").addClass("damaged");
+				$("#damageListFront").append('<li>Front Panel</li><br/><li>Headlights</li><br/>');
+				$("#damageListRight").append('<li>Side Mirror</li><br/><li>Window Panel</li><br/>');
+				$("#frontIcon").remove();
+				$("#rightIcon").remove();
+				$("#engineLightIndicator").addClass("damagedLight");
+				$("#airbagIndicator").addClass("damagedLight");
 		  });
 }else{
 	 //alert("NO Accident!!!");
@@ -98,7 +106,7 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body onload="DisplayCurrentTime()" >
-		<a href="#two" class="button scrolly" style="float: right;">Simulate Accident</a>
+		<!--<a href="#two" class="button scrolly" style="float: right;">Simulate Accident</a>-->
 
 		<!-- Sidebar -->
 			<section id="sidebar">
@@ -172,48 +180,80 @@ if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
 						</section>
 					</section>-->
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up" style="display:show;">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-chain"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-diamond"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="#" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+				<!-- Diagnostics #Two -->
+				<section  id="two" class="wrapper style1 fullscreen fade-up"  >
+					<style>
+							.damaged {
+								background-color: rgba(255, 52, 38, 0.589); 
+
+							}
+							.damagedLight {
+								color: rgb(255, 115, 0);
+							}
+							.notdamaged {background-color:rgb(17, 88, 7); border-style:solid; 
+								border-width: 3px; 
+								border-color: rgb(255, 255, 255);
+								margin: 5px, 5px, 5px, 5px;
+								
+							}
+							
+							
+
+					</style>
+
+
+
+				<div class="inner">
+					<span><h2 style="color:rgb(198, 147, 240);">Vehicle Diagnostics:</h2><img src="images/ryan/car.png" width="26%" height="relative" style="float:right;"/></span>
+					<!--<p>Vehcicle Diagnostics:</p>-->
+					<!--<ps  style="color:rgb(208, 131, 231); font-size:20px">Tesla Model T </p>-->
+						
+						
+
+					<div class="features">
+						<section id="frontOfCar" class="" style="">
+							<span><h3 style="color:rgb(198, 147, 240); font-size:30px;">Front</h3></span>
+							<p><img id="frontIcon" src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+							<ul id ="damageListFront"></ul>
+						</section>
+						<section class="" style="">
+							<!--<span class=""></span>-->
+							<h3 style="color:rgb(198, 147, 240); font-size:30px;">Back</h3>
+							<p><img src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+						</section>
+						<section class="" style="">
+							<!--<span class=""></span>-->
+							<h3 style="color:rgb(198, 147, 240); font-size:30px;">Left</h3>
+							<p><img src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+						</section>
+						<section id ="rightSide" class="" style="">
+						<!--<span class=""></span>-->
+							<h3 style="color:rgb(198, 147, 240); font-size:30px;">Right</h3>
+							<p><img id="rightIcon" src="images/ryan/tesla_car.png" width="36%" height="relative"/></p>
+							<ul id ="damageListRight"></ul>
+						</section>
+						<section class="">
+							<span class=""></span>
+							<h3 style="width 25px;color:rgb(198, 147, 240); font-size:30px;">Dash Light</h3>
+							<p><img src="images/ryan/dashsig.png" width="66%" height="relative"/></p>
+							<body style="font-size:18px;"> <a id="engineLightIndicator">YES</a><a>/NO</a></body>
+						</section>
+						<section class="">
+							<span class=""></span>
+							<h3 style="width 25px;color:rgb(198, 147, 240); font-size:30px;">Air Bag</h3>
+							<p><img src="images/ryan/air_bag.jpg" width="62%" height="relative"/></p>
+							<body style="font-size:18px;"> <a id="airbagIndicator">YES</a><a>/NO</a></body>
+						</section>
+						
+						
+
+						
+					</div>
+					<ul class="actions">
+						<li><a href="#" class="button">Home</a></li>
+					</ul>
+				</div>
+			</section>
 
 				<!-- Three -->
 					<!--<section id="three" class="wrapper style1 fade-up" style="display:show;">
