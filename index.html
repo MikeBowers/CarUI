@@ -46,8 +46,31 @@
 		</script>-->
 
 <script type="text/javascript">
-	var SimulateAccident = confirm("Simulate Accident?");
+
+
+	 //$("#intro").css("background-color", "yellow");
+	 // if(SimulateAccident == true){
+		//  	$(document).ready(function () {
+		//  	alert("hi");
+		//  	$("#status1").text('Accident Detected!');
+		//  	$("#status2").text('Accident Detected!');
+		//  });
+	 // };
+
+
+if(confirm("Simulate Accident? Ok=Yes Cancel=No")){
+		  	$(document).ready(function () {
+		  	$("#status1").text('Accident Detected!');
+				$("#status2").text('Please See Diagnostics Panel and submit claim.');
+		  });
+}else{
+	 //alert("NO Accident!!!");
+}
+
+
+
   function DisplayCurrentTime() {
+
         var date = new Date();
         var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
         var am_pm = date.getHours() >= 12 ? "PM" : "AM";
@@ -57,7 +80,7 @@
         time = hours + ":" + minutes + ":" + seconds + " " + am_pm;
         var lblTime = document.getElementById("time");
         lblTime.innerHTML = time;
-	var timeout = setTimeout(DisplayCurrentTime, 100);
+	var timeout = setTimeout(DisplayCurrentTime, 1000);
     };
 		</script>
 
@@ -98,8 +121,9 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up" style="display:show;">
 						<div class="inner">
 							<h1 id="time">time</h1>
-							<div>Everything in your car looks great.<br/>
-							<div>Diagnostics indicate good driving
+							<div id="status1">Everything in your car looks great.</div><br/>
+							<div id="status2">Diagnostics indicate good driving.</div>
+							<div>
 							<ul class="actions">
 							<br/>
 							<li><a href="#two" class="button scrolly">See more</a></li>
