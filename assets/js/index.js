@@ -18,7 +18,7 @@
   $('input[name=wearingSeatBelt][value=No]').attr('checked','checked');
   $('input[name=wearingSeatBelt]').attr('readonly','readonly');
 
-  $('input[name=pointOfImpact]').val('front panel and right side mirro');
+  $('input[name=pointOfImpact]').val('front panel and right side mirror');
   $('input[name=pointOfImpact]').attr('readonly','readonly');
 
   $('input[name=speedAtTimeOfAccidentMph]').val('50');
@@ -27,7 +27,7 @@
   $('input[name=dateAndTimeOfAccident]').val('2018-03-23T12:01');
   $('input[name=dateAndTimeOfAccident]').attr('readonly','readonly');
 
-  $('input[name=warningLightsUsedPriorToAccident][value=Yes]').attr('checked','checked');
+  $('input[name=warningLightsUsedPriorToAccident]').val('Yes');
   $('input[name=warningLightsUsedPriorToAccident]').attr('readonly','readonly');
 
 })();
