@@ -5,14 +5,9 @@
 <html>
 	<head>
 		<title>QuickClaimz</title>
-
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<span id="lblTime"></span>
-
-		</script>
+		<span id="lblTime"></span>
 		<title>QuickClaimz</title>
-
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -24,17 +19,17 @@
 		<!--<a href="#two" class="button scrolly" style="float: right;">Simulate Accident</a>-->
 
 		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a id="a" href="#intro">Home</a></li>
-							<li><a id="b" href="#two">Diagnostics</a></li>
-							<li><a id="d" href="#four">Claims Information - Contact Shop</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+		<section id="sidebar">
+			<div class="inner">
+				<nav>
+					<ul>
+						<li><a id="a" href="#intro">Home</a></li>
+						<li><a id="b" href="#two">Diagnostics</a></li>
+						<li><a id="d" href="#four">Claims Information - Contact Shop</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -55,15 +50,13 @@
 
 				
 				<!-- Diagnostics #Two -->
-				<section  id="two" class="wrapper style1 fullscreen fade-up"  >
+			<section  id="two" class="wrapper style1 fullscreen fade-up"  >
 				<div class="inner">
 					<h2 style="color:rgb(198, 147, 240);">Vehicle Diagnostics:</h2>
 					<p><img src="images/ryan/car.png" width="26%" height="relative"/></p>
 					<!--<p>Vehcicle Diagnostics:</p>-->
 					<!--<ps  style="color:rgb(208, 131, 231); font-size:20px">Tesla Model T </p>-->
 						
-						
-
 					<div class="features">
 						<section id="frontOfCar" class="" style="">
 							<span><h3 style="color:rgb(198, 147, 240); font-size:30px;">Front</h3></span>
@@ -107,299 +100,172 @@
 						<li><a href="#" class="button">Home</a></li>
 					</ul>
 				</div>
-			</section>
+			</section>		
+		
+			<section id="four" class="wrapper style1 fullscreen fade-up">
+				<div class="inner">
+					<h2>Claim & Repair Form</h2>
+					<p>Tell us a few more details and choose a repair shop</p>	
+				<!--Data-->
+					<form id="test-form" action="">
+						<div class="row uniform">		
+							<div class="9u$ 12u$(xsmall)">
+							<label>Policy Number</label>
+							<input type="number" name="policyNumber" id="policyNumber" placeholder="Policy Number"/>
+							</div>
+						
+							<div class="4u 12u$(xsmall)">
+							<label>First Name</label>
+							<input type="text" name="firstName" placeholder="First Name"/>
+							</div>
+							
+							<div class="5u$ 12u$(xsmall)">
+							<label>Last Name</label>
+							<input type="text" name="lastName" placeholder="Last Name"/>
+							</div>
+							
+							<div class="2u 12u$(xsmall)"> 
+							<label>Age</label>
+							<input type="number" name="age" placeholder="Age"/>
+							</div>
+							
+							<div class="7u$ 12u$(xsmall)">
+								<label>Phone Number</label>
+								<input type="number" name="phoneNumber" placeholder="PhoneNumber"/>
+							</div>
+							
+							<div class="9u$ 12u$(xsmall)">
+								<label>Email</label>
+								<input type="text" name="email" placeholder="Email"/>
+							</div>
+							<div class="9u$ 12u$(xsmall)">
+								<label for="demo-category10">Number of passengers</label>
+								<div class="select-wrapper">
+									<select name="numberOfPassengers" id="demo-category10">
+										<option value="">- Passengers -</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</div>
+							</div>		
+							<h3 class="12u$">Were all passengers wearing a seatbelt?</h3>
+							<div class="4u 12u$(small)">
+								<input type="radio" id="demo-priority-low" value="Yes" name="wearingSeatBelt">
+								<label for="demo-priority-low">Yes</label>
+							</div>
+							<div class="4u$ 12u$(small)">
+								<input type="radio" id="demo-priority-normal" value="No" name="wearingSeatBelt">
+								<label for="demo-priority-normal">No</label>
+							</div>
+							
+							<div class="6u$ 12u$(xsmall)">
+								<label for="jg-id-datetime">Date and time of the accident:</label>
+								<input type="datetime-local" id="jg-id-datetime" name="dateAndTimeOfAccident" class="jg-date-picker"/>
+							</div>
 
-				<!-- Three -->
-					<!-- <section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Claim & Repair Form</h2>
-							<p>Tell us a few more details and choose a repair shop</p>
-							<form method="post" action="#">
-								<div class="row uniform"> -->
-									<!-- <div class="6u$ 12u$(xsmall)">
-										<label for="jg-id-datetime">Date and time of the accident:</label>
-										<input type="datetime-local" id="jg-id-datetime" class="jg-date-picker"/>
-									</div> -->
-									<!-- <div class="9u$ 12u$(xsmall)">
-											<label for="demo-category10">Number of passengers</label>
-										<div class="select-wrapper">
-											<select name="demo-category" id="demo-category10">
-												<option value="">- Passengers -</option>
-												<option value="1">1</option>
-												<option value="2">2</option>
-												<option value="3">3</option>
-												<option value="4">4</option>
-												<option value="5">5</option>
-											</select>
-										</div>
-									</div>	 -->
-									<!-- <h3 class="12u$">Were all passengers wearing a seatbelt?</h3>
-									<div class="4u 12u$(small)">
-										<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-										<label for="demo-priority-low">Yes</label>
-									</div>
-									<div class="4u$ 12u$(small)">
-										<input type="radio" id="demo-priority-normal" name="demo-priority">
-										<label for="demo-priority-normal">No</label>
-									</div> -->
-									<!-- <div class="9u$ 12u$(xsmall)">
-										<label>Speed at time of accident</label>
-										<input type="number" name="demo-name" id="demo-name" value="" placeholder="m/h" />
-									</div> -->
-									<!-- <div class="9u$ 12u$(xsmall)">
-										<label>Main point of impact</label>
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="" />
-									</div> -->
-									<!-- <div class="9u$ 12u$(xsmall)">
-										<label>Were any of the warning lights on prior to the accident?</label>
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="" />
-									</div> -->
-									<!-- <div class="9u$ 12u$(xsmall)">
-										<label>Was the driver using their phone?</label>
-										<input type="text" name="demo-name" id="demo-name" value="" placeholder="" />
-									</div> -->
-								<!-- </div> -->
+							<div class="9u$ 12u$(xsmall)">
+								<label>Speed at time of accident</label>
+								<input type="number" name="speedAtTimeOfAccidentMph" id="demo-name" value="" placeholder="Mph" />
+							</div>		
+							
+							<div class="9u$ 12u$(xsmall)">
+								<label>Main point of impact</label>
+								<input type="text" name="pointOfImpact" id="demo-name" value="" placeholder="" />
+							</div>		
+							
+							<div class="9u$ 12u$(xsmall)">
+								<label>Were any of the warning lights on prior to the accident?</label>
+								<input type="text" name="warningLightsUsedPriorToAccident" id="demo-name" value="" placeholder="" />
+							</div>		
+							
+							<!-- <div class="9u$ 12u$(xsmall)">
+								<label>Was the driver using their phone?</label>
+								<input type="text" name="onPhoneDuringAccident" id="demo-name" value="" placeholder="" />
+							</div> -->
 
-									<!-- <section>
-										<h2 class="major">Repair Shops</h2>
-										<div class="table-wrapper">
-											<table>
-												<thead>
-													<tr>
-														<th>Shop</th>
-														<th>Distance</th>
-														<th></th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>The first shop</td>
-														<td>0.2 miles</td>
-														<td>
-															<div class="1u 12u$(small)">
-																<input type="radio" id="repair-shop-one" name="repair-shop-selection" checked>
-																<label for="repair-shop-one"></label>
-															</div>								
-														</td>
-													</tr>
-													<tr>
-														<td>The better shop</td>
-														<td>5 miles</td>
-														<td>
-															<div class="1u$ 12u$(small)">
-																<input type="radio" id="repair-shop-two" name="repair-shop-selection">
-																<label for="repair-shop-two"></label>
-															</div>								
-														</td>
-													</tr>
-													<tr>
-														<td>The best shop</td>
-														<td> 7 miles</td>
-														<td>
-															<div class="1u$ 12u$(small)">
-																<input type="radio" id="repair-shop-three" name="repair-shop-selection">
-																<label for="repair-shop-three"></label>
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-									</section>
-									<div class="12u$">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="special" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</div>
-							</form>
+							<h3 class="12u$">Was the driver using their phone?</h3>
+							<div class="4u 12u$(small)">
+								<input type="radio" id="demo-priority-low" value="Yes" name="onPhoneDuringAccident">
+								<label for="demo-priority-low">Yes</label>
+							</div>
+							<div class="4u$ 12u$(small)">
+								<input type="radio" id="demo-priority-normal" value="No" name="onPhoneDuringAccident">
+								<label for="demo-priority-normal">No</label>
+							</div>
+
 						</div>
-					</section> -->
-		
-		
-					<section id="four" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h2>Claim & Repair Form</h2>
-							<p>Tell us a few more details and choose a repair shop</p>	
-						<!--Data-->
-								  <form id="test-form" action="">
-										<div class="row uniform">		
-										  <div class="9u$ 12u$(xsmall)">
-											<label>Policy Number</label>
-											<input type="text" name="policyNumber" id="policyNumber" placeholder="Policy Number"/>
-										  </div>
-										
-										  <div class="4u 12u$(xsmall)">
-											<label>First Name</label>
-											<input type="text" name="firstName" placeholder="First Name"/>
-										  </div>
-										  
-										  <div class="5u$ 12u$(xsmall)">
-											<label>Last Name</label>
-											<input type="text" name="lastName" placeholder="Last Name"/>
-										  </div>
-										  
-										  <div class="2u 12u$(xsmall)"> 
-											<label>Age</label>
-											<input type="text" name="age" placeholder="Age"/>
-										  </div>
-										  
-										  <div class="7u$ 12u$(xsmall)">
-											  <label>Phone Number</label>
-											  <input type="text" name="phoneNumber" placeholder="PhoneNumber"/>
-										  </div>
-										  
-										  <div class="9u$ 12u$(xsmall)">
-											  <label>Email</label>
-											  <input type="text" name="email" placeholder="Email"/>
-										  </div>
-										  <div class="9u$ 12u$(xsmall)">
-												<label for="demo-category10">Number of passengers</label>
-											<div class="select-wrapper">
-												<select name="numberOfPassengers" id="demo-category10">
-													<option value="">- Passengers -</option>
-													<option value="1">1</option>
-													<option value="2">2</option>
-													<option value="3">3</option>
-													<option value="4">4</option>
-													<option value="5">5</option>
-												</select>
-											</div>
-										</div>		
-										  <!-- <div>
-											  <label>Wearing Seat Belt</label>
-											  <input type="text" name="wearingSeatBelt" placeholder="WearingSeatBelt"/>
-										  </div> -->
-										  <h3 class="12u$">Were all passengers wearing a seatbelt?</h3>
-										  <div class="4u 12u$(small)">
-											  <input type="radio" id="demo-priority-low" value="Yes" name="wearingSeatBelt">
-											  <label for="demo-priority-low">Yes</label>
-										  </div>
-										<div class="4u$ 12u$(small)">
-											<input type="radio" id="demo-priority-normal" value="No" name="wearingSeatBelt">
-											<label for="demo-priority-normal">No</label>
-										</div>
-										  <!-- <div>
-											  <label>Number Of Passengers</label>
-											  <input type="text" name="numberOfPassengers" placeholder="NumberOfPassengers"/>
-										  </div> -->
-										  
-										  <!-- <div>
-											  <label>Date and Time Of Accident</label>
-											  <input type="text" name="dateAndTimeOfAccident" placeholder="YYYY-MM-DD HH:mm"/>
-										  </div> -->
-										  <div class="6u$ 12u$(xsmall)">
-												<label for="jg-id-datetime">Date and time of the accident:</label>
-												<input type="datetime-local" id="jg-id-datetime" name="dateAndTimeOfAccident" class="jg-date-picker"/>
-											</div>
 
-										  <!-- <div>
-											  <label>Speed At Time Of Accident in Mph</label>
-											  <input type="text" name="speedAtTimeOfAccidentMph" placeholder="speedAtTimeOfAccidentMph"/>
-										  </div> -->
-										  <div class="9u$ 12u$(xsmall)">
-												<label>Speed at time of accident</label>
-												<input type="number" name="speedAtTimeOfAccidentMph" id="demo-name" value="" placeholder="Mph" />
-											</div>		
-										  
-										  <!-- <div>
-											  <label>Point Of Impact</label>
-											  <input type="text" name="pointOfImpact" placeholder="pointOfImpact"/>
-										  </div> -->
-										  <div class="9u$ 12u$(xsmall)">
-												<label>Main point of impact</label>
-												<input type="text" name="pointOfImpact" id="demo-name" value="" placeholder="" />
-											</div>		
-										  
-										  <!-- <div>
-											  <label>WarningLightsUsedProrToAccident</label>
-											  <input type="text" name="warningLightsUsedProrToAccident" placeholder="warningLightsUsedProrToAccident"/>
-										  </div> -->
-										  <div class="9u$ 12u$(xsmall)">
-												<label>Were any of the warning lights on prior to the accident?</label>
-												<input type="text" name="warningLightsUsedPriorToAccident" id="demo-name" value="" placeholder="" />
-											</div>		
-										  
-										  <!-- <div>
-											  <label>onPhoneDuringAccident</label>
-											  <input type="text" name="onPhoneDuringAccident" placeholder="onPhoneDuringAccident"/>
-										  </div> -->
-										  <div class="9u$ 12u$(xsmall)">
-												<label>Was the driver using their phone?</label>
-												<input type="text" name="onPhoneDuringAccident" id="demo-name" value="" placeholder="" />
-											</div>
-		
-										  <!-- <div>
-											<label>Repair Shop</label>
-											<input type="text" name="repairShop" placeholder="repairShop"/>
-										</div> -->
-									</div>
-
-									<section>
-											<h2 class="major">Repair Shops</h2>
-											<div class="table-wrapper">
-												<table>
-													<thead>
-														<tr>
-															<th>Shop</th>
-															<th>Distance</th>
-															<th></th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td>The first shop</td>
-															<td>0.2 miles</td>
-															<td>
-																<div class="1u 12u$(small)">
-																	<input type="radio" id="repair-shop-one" value="repair-shop-one" name="repairShop" checked>
-																	<label for="repair-shop-one"></label>
-																</div>								
-															</td>
-														</tr>
-														<tr>
-															<td>The better shop</td>
-															<td>5 miles</td>
-															<td>
-																<div class="1u$ 12u$(small)">
-																	<input type="radio" id="repair-shop-two" value="repair-shop-two" name="repairShop">
-																	<label for="repair-shop-two"></label>
-																</div>								
-															</td>
-														</tr>
-														<tr>
-															<td>The best shop</td>
-															<td> 7 miles</td>
-															<td>
-																<div class="1u$ 12u$(small)">
-																	<input type="radio" id="repair-shop-three" value="repair-shop-three" name="repairShop">
-																	<label for="repair-shop-three"></label>
-																</div>
-															</td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</section>
-										<div class="12u$">
-											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="special" id="submit-form"/></li>
-												<li><input type="reset" value="Reset" /></li>
-											</ul>
-										</div>
-	
-
-										  <!-- <div>
-											<button type="submit"id="submit-form">Submit</button>
-										  </div> -->
-										
-						  </form>
-						   </div>
-					  </section>
-
-
-			</div>
-
+						<section>
+						</br>
+							<h2 class="major">Repair Shops</h2>
+							<div class="12u$ 12u$(small) jg-location"><p>(based on your location)</p></div>
+							<div class="shop-disclaimer"><p>We will submit your information and block time for your repair.</br> This will speed up the process once your claim is approved.</p></div>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Shop</th>
+											<th>Distance</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>The first shop</td>
+											<td>0.2 miles</td>
+											<td>
+												<div class="1u 12u$(small)">
+													<input type="radio" id="repair-shop-one" value="repair-shop-one" name="repairShop" checked>
+													<label for="repair-shop-one"></label>
+												</div>								
+											</td>
+										</tr>
+										<tr>
+											<td>The better shop</td>
+											<td>5 miles</td>
+											<td>
+												<div class="1u$ 12u$(small)">
+													<input type="radio" id="repair-shop-two" value="repair-shop-two" name="repairShop">
+													<label for="repair-shop-two"></label>
+												</div>								
+											</td>
+										</tr>
+										<tr>
+											<td>The best shop</td>
+											<td> 7 miles</td>
+											<td>
+												<div class="1u$ 12u$(small)">
+													<input type="radio" id="repair-shop-three" value="repair-shop-three" name="repairShop">
+													<label for="repair-shop-three"></label>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>Choose my own</td>
+											<td>-</td>
+											<td>
+												<div class="1u$ 12u$(small)">
+													<input type="radio" id="repair-shop-other" value="repair-shop-other" name="repairShop">
+													<label for="repair-shop-other"></label>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+						<div class="12u$">
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="special" id="submit-form"/></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+						</div>								
+					</form>
+				</div>
+			</section>
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">

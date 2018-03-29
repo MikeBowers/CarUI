@@ -3980,4 +3980,12 @@
 			padding:20px;
 			background:#FFF;
 		}
+
+		.jg-location p{
+			margin-bottom: 0;
+		}
+
+		.shop-disclaimer p{
+			font-size: 12px;
+		}
 		
